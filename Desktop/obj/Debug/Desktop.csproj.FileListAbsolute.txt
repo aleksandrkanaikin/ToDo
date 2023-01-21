@@ -15,3 +15,5 @@ C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Desktop.csproj.GenerateResour
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Desktop.csproj.CoreCompileInputs.cache
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Desktop.exe
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Desktop.pdb
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\RegistrationWindow.g.cs
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\RegistrationWindow.baml
