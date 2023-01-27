@@ -5,7 +5,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local="clr-namespace:Desktop"
         mc:Ignorable="d"
-        Title="RegistrationWindow" Height="650" Width="800">
+        Title="RegistrationWindow" Height="650" Width="800"
+        ResizeMode="NoResize">
     <Grid>
         <Grid.ColumnDefinitions>
         <ColumnDefinition></ColumnDefinition>
@@ -15,13 +16,13 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="90"></RowDefinition>
             <RowDefinition Height="41"></RowDefinition>
-            <RowDefinition Height="47"></RowDefinition>
+            <RowDefinition Height="57"></RowDefinition>
             <RowDefinition Height="35"></RowDefinition>
-            <RowDefinition Height="46"></RowDefinition>
+            <RowDefinition Height="56"></RowDefinition>
             <RowDefinition Height="35"></RowDefinition>
-            <RowDefinition Height="47"></RowDefinition>
+            <RowDefinition Height="57"></RowDefinition>
             <RowDefinition Height="35"></RowDefinition>
-            <RowDefinition Height="47"></RowDefinition>
+            <RowDefinition Height="57"></RowDefinition>
             <RowDefinition Height="68"></RowDefinition>
             <RowDefinition Height="58"></RowDefinition>
         </Grid.RowDefinitions>
@@ -35,44 +36,62 @@
         <WrapPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom">
             <TextBlock FontSize="20" FontFamily="Actor">Имя пользователя</TextBlock>
         </WrapPanel>
-        <WrapPanel Grid.Column="1" Grid.Row="2" VerticalAlignment="Center">
+        <WrapPanel Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Orientation="Vertical">
             <TextBox Name="UserNameTxb" Height="31" Width="326" Text="Введите имя пользователя"
                      FontSize="16" Foreground="Gray" VerticalAlignment="Center" 
-                     GotFocus="UserName_txb_OnGotFocus" LostFocus="UserName_txb_OnLostFocus"></TextBox>
+                     GotFocus="UserName_txb_OnGotFocus" LostFocus="UserName_txb_OnLostFocus"
+                     BorderThickness="0,0,0,1"></TextBox>
+            <Label Name="ErrorUserName" FontSize="9" FontFamily="Actor" Foreground="Red"></Label>
         </WrapPanel>
         <WrapPanel Grid.Column="1" Grid.Row="3" VerticalAlignment="Center">
             <TextBlock FontSize="20" FontFamily="Actor">Ваша почта</TextBlock>
         </WrapPanel>
-        <WrapPanel Grid.Column="1" Grid.Row="4">
+        <WrapPanel Grid.Column="1" Grid.Row="4" Orientation="Vertical">
             <TextBox Name="RegistrationMailTxb" Height="30" Width="326" Text="Введите почту"
                      FontSize="16" Foreground="Gray" VerticalAlignment="Center"
-                     GotFocus="RegistrationMailTxb_OnGotFocus" LostFocus="RegistrationMailTxb_OnLostFocus"></TextBox>
+                     GotFocus="RegistrationMailTxb_OnGotFocus" LostFocus="RegistrationMailTxb_OnLostFocus"
+                     BorderThickness="0,0,0,1"></TextBox>
+            <Label Name="ErrorEmail" FontSize="9" FontFamily="Actor" Foreground="Red"></Label>
         </WrapPanel>
         <WrapPanel Grid.Column="1" Grid.Row="5" VerticalAlignment="Center">
             <TextBlock FontSize="20" FontFamily="Actor"> Введите пароль</TextBlock>
         </WrapPanel>
-        <WrapPanel Grid.Column="1" Grid.Row="6" VerticalAlignment="Center">
+        <WrapPanel Grid.Column="1" Grid.Row="6" VerticalAlignment="Center" Orientation="Vertical">
             <TextBox Name="RegPasswordTxb" Height="31" Width="326" Text="Введите пароль" 
                      FontSize="16" Foreground = "Gray" VerticalAlignment="Center"
-                     GotFocus="RegPasswordTxb_OnGotFocus" LostFocus="RegPasswordTxb_OnLostFocus"></TextBox>
+                     GotFocus="RegPasswordTxb_OnGotFocus" LostFocus="RegPasswordTxb_OnLostFocus" 
+                     BorderThickness="0,0,0,1"></TextBox>
+            <Label Name="ErrorPassword" FontSize = "9" FontFamily="Actor" Foreground="Red"></Label>
         </WrapPanel>
         <WrapPanel Grid.Column="1" Grid.Row="7" VerticalAlignment="Center">
             <TextBlock FontSize="20" FontFamily="Actor"> Повторите пароль</TextBlock>
         </WrapPanel>
-        <WrapPanel Grid.Column="1" Grid.Row="8" VerticalAlignment="Center">
+        <WrapPanel Grid.Column="1" Grid.Row="8" VerticalAlignment="Center" Orientation="Vertical">
             <TextBox Name="RepeatPasswordTxb" Height="31" Width="326" Text="Повторите пароль"
                      FontSize="16" Foreground="Gray" VerticalAlignment="Center"
-                     GotFocus="RepeatPasswordTxb_OnGotFocus" LostFocus="RepeatPasswordTxb_OnLostFocus"></TextBox>
+                     GotFocus="RepeatPasswordTxb_OnGotFocus" LostFocus="RepeatPasswordTxb_OnLostFocus"
+                     BorderThickness="0,0,0,1"></TextBox>
+            <Label Name="ErrorRepeatPassword" FontSize="9" FontFamily="Actor" Foreground="Red"></Label>
         </WrapPanel>
         <WrapPanel Grid.Column="1" Grid.Row="9" VerticalAlignment="Center">
              <Button x:Name="GoToRegistrationBtn" Width="327" Height="48" Background="#F96060"
                      Click="GoToRegistrationBtn_OnClick">
-                <TextBlock TextAlignment="Center" FontFamily="Actor" FontSize="18" Foreground="White">Зарегистироваться</TextBlock>
+                 <Button.Resources>
+                     <Style TargetType="Border">
+                         <Setter Property="CornerRadius" Value="15,15,0,0"></Setter>
+                     </Style>
+                 </Button.Resources>
+                 <TextBlock TextAlignment="Center" FontFamily="Actor" FontSize="18" Foreground="White">Зарегистироваться</TextBlock>
             </Button>
         </WrapPanel>
         <WrapPanel Grid.Column="1" Grid.Row="10" VerticalAlignment="Top">
             <Button Name="BackToStartBtn" Width="327" Height="48" Background="#F96060"
                     Click="BackToStartBtn_OnClick">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="0,0,15,15"></Setter>
+                    </Style>
+                </Button.Resources>
                 <TextBlock TextAlignment="Center" FontFamily="Actor" FontSize="18" Foreground="White">Назад</TextBlock>
             </Button>
         </WrapPanel>

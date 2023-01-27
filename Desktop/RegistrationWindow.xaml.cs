@@ -1,4 +1,6 @@
 ﻿using System.Windows;
+using System.Windows.Media;
+using Desktop.Properties;
 
 namespace Desktop
 {
@@ -9,61 +11,88 @@ namespace Desktop
             InitializeComponent();
         }
 
+        #region Texboxes
         private void UserName_txb_OnGotFocus(object sender, RoutedEventArgs e)
         {
-            throw new System.NotImplementedException();
+            if (UserNameTxb.Text != "Введите имя пользователя") return;
+            UserNameTxb.Text = "";
+            UserNameTxb.Foreground = new SolidColorBrush(Colors.Black);
         }
 
         private void UserName_txb_OnLostFocus(object sender, RoutedEventArgs e)
         {
-            throw new System.NotImplementedException();
-        }
+            if (UserNameTxb.Text != "") return;
+            UserNameTxb.Text = "Введите имя пользователя";
+            UserNameTxb.Foreground = new SolidColorBrush(Colors.Gray);          }
 
         private void RegistrationMailTxb_OnGotFocus(object sender, RoutedEventArgs e)
         {
-            
+            if (RegistrationMailTxb.Text != "Введите почту") return;
+            RegistrationMailTxb.Text = "";
+            RegistrationMailTxb.Foreground = new SolidColorBrush(Colors.Black);
         }
 
         private void RegistrationMailTxb_OnLostFocus(object sender, RoutedEventArgs e)
         {
-            
+            if (RegistrationMailTxb.Text != "") return;
+            RegistrationMailTxb.Text = "Введите почту";
+            RegistrationMailTxb.Foreground = new SolidColorBrush(Colors.Gray);
         }
 
         private void RegPasswordTxb_OnGotFocus(object sender, RoutedEventArgs e)
         {
-            throw new System.NotImplementedException();
+            if (RegPasswordTxb.Text!= "Введите пароль") return;
+            RegPasswordTxb.Text = "";
+            RegPasswordTxb.Foreground = new SolidColorBrush(Colors.Black);
         }
 
         private void RegPasswordTxb_OnLostFocus(object sender, RoutedEventArgs e)
         {
-            throw new System.NotImplementedException();
+            if (RegPasswordTxb.Text != "") return;
+            RegPasswordTxb.Text = "Введите пароль";
+            RegPasswordTxb.Foreground = new SolidColorBrush(Colors.Gray);
         }
+
+        private void RepeatPasswordTxb_OnGotFocus(object sender, RoutedEventArgs e)
+        {
+            if (RepeatPasswordTxb.Text != "Повторите пароль") return;
+            RepeatPasswordTxb.Text = "";
+            RegPasswordTxb.Foreground = new SolidColorBrush(Colors.Black);
+        }
+
+        private void RepeatPasswordTxb_OnLostFocus(object sender, RoutedEventArgs e)
+        {
+            if (RepeatPasswordTxb.Text != "") return;
+            RepeatPasswordTxb.Text = "Повторите пароль";
+            RepeatPasswordTxb.Foreground = new SolidColorBrush(Colors.Gray);
+        }
+        #endregion
 
         private void GoToRegistrationBtn_OnClick(object sender, RoutedEventArgs e)
         {
-            if (RegPasswordTxb.Text == null)
+            if (Validator.NameValid(UserNameTxb) == null &&
+                Validator.EmailValid(RegistrationMailTxb) == null &&
+                Validator.PassValid(RegPasswordTxb) == null &&
+                Validator.RepeatPassValid(RegPasswordTxb, RepeatPasswordTxb) == null)
             {
-                MessageBox.Show("Введите пароль");
+                var window = new MainEmptyWindow();
+                window.Show();
+                this.Close();
             }
             else
             {
-                
+                ErrorUserName.Content = Validator.NameValid(UserNameTxb);
+                ErrorEmail.Content = Validator.EmailValid(RegistrationMailTxb);
+                ErrorPassword.Content = Validator.PassValid(RegPasswordTxb);
+                ErrorRepeatPassword.Content = Validator.RepeatPassValid(RegPasswordTxb, RepeatPasswordTxb);
             }
         }
 
         private void BackToStartBtn_OnClick(object sender, RoutedEventArgs e)
         {
-            var wind = new MainWindow();
+            var wind = new LogInWindow();
             wind.Show();
             this.Close();
-        }
-
-        private void RepeatPasswordTxb_OnGotFocus(object sender, RoutedEventArgs e)
-        {
-        }
-
-        private void RepeatPasswordTxb_OnLostFocus(object sender, RoutedEventArgs e)
-        {
         }
     }
 }

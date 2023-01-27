@@ -1,0 +1,80 @@
+﻿<Window x:Class="Desktop.LogInWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Desktop"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="800"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="111"></RowDefinition>
+            <RowDefinition Height="140"></RowDefinition>
+            <RowDefinition Height="65"></RowDefinition>
+            <RowDefinition Height="54"></RowDefinition>
+            <RowDefinition Height="59"></RowDefinition>
+            <RowDefinition Height="38"></RowDefinition>
+            <RowDefinition Height="65"></RowDefinition>
+            <RowDefinition Height="89"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <WrapPanel Grid.RowSpan="7" Grid.Column="0">
+            <Image Margin="69,70,0,0" Source="Images/Logo.png" Height="149" Width="149" />
+        </WrapPanel>
+        <WrapPanel Grid.Row="0"  Grid.Column="1" VerticalAlignment="Bottom">
+            <TextBlock FontSize="31px" FontFamily="Actor" >  Добро пожаловать!</TextBlock>
+        </WrapPanel> 
+        <WrapPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom">
+            <TextBlock FontSize="20px" FontFamily="Actor">Почта</TextBlock>
+        </WrapPanel>
+        <WrapPanel Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Orientation="Vertical">
+            <TextBox x:Name="LoginMailTxb" Text="Введите почту" FontSize="20" Foreground="Gray"
+                     BorderThickness="0,0,0,1"
+                     GotFocus="LoginMailTxb_OnGotFocus" LostFocus="LoginMailTxb_OnLostFocus" 
+                     Width="326" Height="37"></TextBox>
+            <Label Name="ErrorEmail" FontSize="9" FontFamily="Actor" Foreground="Red"></Label>
+        </WrapPanel>
+        <WrapPanel Grid.Column="1" Grid.Row="3" VerticalAlignment="Center">
+            <TextBlock FontFamily="Actor" FontSize="20">Пароль</TextBlock>
+        </WrapPanel>
+        <WrapPanel Grid.Column="1" Grid.Row="4" VerticalAlignment="Center"  Orientation="Vertical">
+            <TextBox x:Name="LoginPasswTxb" Width="326" Height="34" Text="Введите пароль" 
+                     FontSize="20" Foreground="Gray" BorderThickness="0,0,0,1"
+                     GotFocus="LoginPassw_txb_OnGotFocus" LostFocus="LoginPassw_txb_OnLostFocus"></TextBox>
+            <Label Name="ErrorPassword" FontSize="9" FontFamily="Actor" Foreground="Red"></Label>
+        </WrapPanel>
+        <WrapPanel Grid.Column="1" Grid.Row="5" HorizontalAlignment="Center"> 
+            <TextBlock FontFamily="Actor" FontSize="18"> Восстановить пароль</TextBlock>
+        </WrapPanel>
+        <WrapPanel Grid.Column="1" Grid.Row="6"> 
+            <Button x:Name="LoginBtn" Width="327" Height="48" Background="#F96060" 
+                    Click="LoginBtn_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="15,15,0,0"></Setter>
+                    </Style>
+                </Button.Resources>
+                <TextBlock TextAlignment="Center" FontFamily="Actor" FontSize="18"
+                           Foreground="White"> Войти</TextBlock>
+            </Button>
+        </WrapPanel>
+        <WrapPanel Grid.Column="1" Grid.Row="7">
+            <Button x:Name="RegistrationBtn" Width="327" Height="48"
+                    Background="#F96060" Click="RegistrationBtn_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="0,0,15,15"></Setter>
+                    </Style>
+                </Button.Resources>
+                <TextBlock TextAlignment="Center" FontFamily="Actor" FontSize="18" 
+                           Foreground="White"> Регистрация</TextBlock>
+            </Button>
+        </WrapPanel>
+    </Grid>
+</Window>

@@ -3,12 +3,9 @@ C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\Desktop.exe
 C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\Desktop.pdb
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Desktop.csproj.AssemblyReference.cache
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Desktop.csproj.SuggestedBindingRedirects.cache
-C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\MainWindow.g.cs
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\App.g.cs
-C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Desktop_Content.g.cs
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Desktop_MarkupCompile.cache
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Desktop_MarkupCompile.lref
-C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\MainWindow.baml
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Desktop.g.resources
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Desktop.Properties.Resources.resources
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Desktop.csproj.GenerateResource.cache
@@ -17,3 +14,9 @@ C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Desktop.exe
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Desktop.pdb
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\RegistrationWindow.g.cs
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\RegistrationWindow.baml
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\CreateTaskWindow.g.cs
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\MainEmptyWindow.g.cs
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\LogInWindow.g.cs
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\CreateTaskWindow.baml
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\MainEmptyWindow.baml
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\LogInWindow.baml
