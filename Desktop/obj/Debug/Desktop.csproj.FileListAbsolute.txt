@@ -20,3 +20,6 @@ C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\LogInWindow.g.cs
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\CreateTaskWindow.baml
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\MainEmptyWindow.baml
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\LogInWindow.baml
+C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\Entities.dll
+C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\Entities.pdb
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Desktop.csproj.CopyComplete

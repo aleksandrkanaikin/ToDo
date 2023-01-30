@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Media;
 using Desktop.Properties;
+using Desktop.Repository;
 
 namespace Desktop
 {
@@ -75,9 +76,19 @@ namespace Desktop
                 Validator.PassValid(RegPasswordTxb) == null &&
                 Validator.RepeatPassValid(RegPasswordTxb, RepeatPasswordTxb) == null)
             {
-                var window = new MainEmptyWindow();
-                window.Show();
-                this.Close();
+                var loginUser =
+                    UserRepository.Registration(UserNameTxb.Text, RegistrationMailTxb.Text, RegPasswordTxb.Text);
+
+                if (loginUser != null)
+                {
+                    var wind = new MainEmptyWindow();
+                    wind.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Пользователь уже зарегестрирован");
+                }
             }
             else
             {

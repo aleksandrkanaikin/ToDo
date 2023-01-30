@@ -2,6 +2,7 @@
 using System.Windows.Controls;
 using System.Windows.Media;
 using Desktop.Properties;
+using Desktop.Repository;
 
 namespace Desktop
 {
@@ -20,10 +21,19 @@ namespace Desktop
             if (Validator.EmailValid(LoginMailTxb) == null && 
                 Validator.PassValid(LoginPasswTxb) == null)
             {
-                var wind = new MainEmptyWindow();
-                wind.Show();
-                this.Hide();
-                
+                var loginUser = UserRepository.LogIn(LoginMailTxb.Text, LoginPasswTxb.Text);
+
+                if (loginUser != null)
+                {
+                    var wind = new MainEmptyWindow();
+                    wind.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Пользователя не существует");
+                }
+
             }
             else
             {

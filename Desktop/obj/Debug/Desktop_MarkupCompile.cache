@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\User\Documents\ToDo\Desktop\obj\Debug\
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\
 Desktop
 none
 false
 DEBUG;TRACE
-C:\Users\User\Documents\ToDo\Desktop\App.xaml
+C:\Users\User\RiderProjects\ToDo\Desktop\App.xaml
 4-1952951312
 
-91471039034
-91659208413
+10-2047901852
+10-619083396
 CreateTaskWindow.xaml;LogInWindow.xaml;MainEmptyWindow.xaml;RegistrationWindow.xaml;
 
-True
+False
 
