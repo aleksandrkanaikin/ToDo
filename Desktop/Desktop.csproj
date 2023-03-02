@@ -53,6 +53,9 @@
         <Compile Include="CreateTaskWindow.xaml.cs">
           <DependentUpon>CreateTaskWindow.xaml</DependentUpon>
         </Compile>
+        <Compile Include="Main.xaml.cs">
+          <DependentUpon>Main.xaml</DependentUpon>
+        </Compile>
         <Compile Include="MainEmptyWindow.xaml.cs">
           <DependentUpon>MainEmptyWindow.xaml</DependentUpon>
         </Compile>
@@ -60,6 +63,8 @@
         <Compile Include="RegistrationWindow.xaml.cs">
           <DependentUpon>RegistrationWindow.xaml</DependentUpon>
         </Compile>
+        <Compile Include="Repository\TaskCategoryRepository.cs" />
+        <Compile Include="Repository\TaskRepository.cs" />
         <Compile Include="Repository\UserRepository.cs" />
         <Compile Include="Validator.cs" />
         <Page Include="CreateTaskWindow.xaml" />
@@ -75,6 +80,7 @@
             <DependentUpon>LogInWindow.xaml</DependentUpon>
             <SubType>Code</SubType>
         </Compile>
+        <Page Include="Main.xaml" />
         <Page Include="MainEmptyWindow.xaml" />
         <Page Include="RegistrationWindow.xaml" />
     </ItemGroup>

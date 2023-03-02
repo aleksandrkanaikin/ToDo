@@ -8,5 +8,12 @@ namespace Desktop
         {
             InitializeComponent();
         }
+
+        private void CancelButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            var window = new MainEmptyWindow();
+            window.Show();
+            this.Close();
+        }
     }
 }

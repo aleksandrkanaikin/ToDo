@@ -86,7 +86,7 @@
         </WrapPanel>
         <WrapPanel Grid.Column="1" Grid.Row="6"
                    VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Button Background="#E04321" Width="327" Height="48">
+            <Button Background="#E04321" Width="327" Height="48" Name="CancelButton" Click="CancelButton_OnClick">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="15"></Setter>
