@@ -64,7 +64,8 @@
             </TextBox>
         </WrapPanel>
         <WrapPanel Grid.Column="0" Grid.Row="6" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Button Background="#50AF54" Width="327" Height="48">
+            <Button Name="CreateTaskBtn" Background="#50AF54" Width="327" Height="48"
+                    Click="CreateTaskBtn_OnClick">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="15"></Setter>

@@ -25,7 +25,7 @@ namespace Desktop
 
                 if (loginUser != null)
                 {
-                    var wind = new MainEmptyWindow();
+                    var wind = new MainEmptyWindow("Alex");
                     wind.Show();
                     this.Hide();
                 }

@@ -81,7 +81,7 @@ namespace Desktop
 
                 if (loginUser != null)
                 {
-                    var wind = new MainEmptyWindow();
+                    var wind = new MainEmptyWindow(UserNameTxb.Text);
                     wind.Show();
                     this.Hide();
                 }

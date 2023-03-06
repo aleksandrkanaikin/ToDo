@@ -23,3 +23,5 @@ C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\LogInWindow.baml
 C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\Entities.dll
 C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\Entities.pdb
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Desktop.csproj.CopyComplete
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Main.g.cs
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Main.baml
