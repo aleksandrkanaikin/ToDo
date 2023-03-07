@@ -9,6 +9,7 @@ namespace Desktop
         {
             InitializeComponent();
             userName = name;
+            UserNameTxb.Text = name;
         }
 
         private void NewTaskButton_OnClick(object sender, RoutedEventArgs e)

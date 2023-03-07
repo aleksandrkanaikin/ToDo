@@ -43,32 +43,47 @@ namespace Desktop
             
             Tasks = new ObservableCollection<TaskModel>
             {
-                new TaskModel("dfsdsg",Categories[1], "nnkjnjjonhhibhi",  "16.02.2023", 1, false),
-                new TaskModel("vdbdfb", Categories[2], "svdfcdfgvbfgf", "15.02.2023", 2, false)
+                new TaskModel{Id = 1, Name = "Go fishing with Stephen", Category = Categories[1], 
+                    Description = "Lorem ipsum dolor sit amet,consectetur adipiscing.", Date = "16.02.2023", Check = true},
+                new TaskModel{Id = 1, Name = "Go fishing with Stephen", Category = Categories[1], 
+                    Description = "Lorem ipsum dolor sit amet,consectetur adipiscing.", Date = "16.02.2023", Check = false},
+                new TaskModel{Id = 1, Name = "Go fishing with Stephen", Category = Categories[1], 
+                    Description = "Lorem ipsum dolor sit amet,consectetur adipiscing.", Date = "16.02.2023", Check = false},
+                new TaskModel{Id = 1, Name = "Go fishing with Stephen", Category = Categories[1], 
+                    Description = "Lorem ipsum dolor sit amet,consectetur adipiscing.", Date = "16.02.2023", Check = false},
+                new TaskModel{Id = 1, Name = "Go fishing with Stephen", Category = Categories[1], 
+                    Description = "Lorem ipsum dolor sit amet,consectetur adipiscing.", Date = "16.02.2023", Check = false}
             };
             TaskList.ItemsSource = Tasks;
-
-
         }
 
         private void CateogryList_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            throw new NotImplementedException();
         }
 
         private void TaskList_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            throw new NotImplementedException();
+            if (TaskList.SelectedItem is TaskModel task)
+            {
+                TaskNameTxb.Text = task.Name;
+                TaskDateTxb.Text = task.Date;
+                TaskDescriptionTxb.Text = task.Description;
+                TaskFullDescription.Visibility = Visibility.Visible;
+            }
+            else TaskFullDescription.Visibility = Visibility.Hidden;
         }
 
         private void TaskComplitedBtn_OnClick(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            TaskModel task = (TaskModel) TaskList.SelectedItem;
+            task.Check = true;
+            
         }
 
         private void DeleteTaskBtn_OnClick(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            TaskModel task = (TaskModel) TaskList.SelectedItem;
+            Tasks.Remove(task);
         }
     }
 }

@@ -5,13 +5,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local="clr-namespace:Desktop"
         mc:Ignorable="d"
-        Title="Main" Height="600" Width="800">
+        Title="Main" Height="600" Width="800"
+        ResizeMode="NoResize">
     <Window.Resources>
         <DataTemplate x:Key="ListCategoryTemplate">
             <StackPanel>
                 <TextBlock
-                    FontSize="16" Foreground="{Binding Path=color}"
-                    Text="{Binding Path=categoryName}" Margin="6">
+                    FontSize="16" Foreground = "{Binding Path=Color}"
+                    Text="{Binding Path=CategoryName}" Margin="6">
                 </TextBlock>
             </StackPanel>
         </DataTemplate>
@@ -26,15 +27,15 @@
                 <CheckBox Name="IsTaskComplited" HorizontalAlignment="Center" 
                           VerticalAlignment="Center"
                           Margin="22" BorderThickness="3"
-                          BorderBrush="#6074F9" IsChecked="{Binding Path=Tasks.Check}"></CheckBox>
+                          BorderBrush="#6074F9" IsChecked="{Binding Path=Check}"></CheckBox>
                 <WrapPanel Orientation="Vertical" HorizontalAlignment="Stretch">
                     <TextBlock MaxWidth="200" HorizontalAlignment="Left"
-                               Text="{Binding Path=name}"
+                               Text="{Binding Path=Name}"
                                Padding="0,10,0,0" FontSize="16" 
                                TextTrimming="WordEllipsis"></TextBlock>
                     <TextBlock VerticalAlignment="Bottom" Foreground="#9B9B9B"
                                FontSize="16"
-                               Text="{Binding Path=Tasks.date}"></TextBlock>
+                               Text="{Binding Path=Date}"></TextBlock>
                 </WrapPanel>
             </StackPanel>
         </DataTemplate>
@@ -66,7 +67,7 @@
         <ListBox Name="CateogryList" BorderThickness="0" 
                  Grid.Column="1" VerticalAlignment="Bottom"
                  HorizontalAlignment="Stretch" SelectionChanged="CateogryList_OnSelectionChanged"
-                 ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemTemplate="{Binding Path=Categories.categoryName}">
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemTemplate="{StaticResource ListCategoryTemplate}">
            <ListBox.ItemsPanel>
                <ItemsPanelTemplate>
                    <WrapPanel />
@@ -87,6 +88,9 @@
                     <WrapPanel />
                 </ItemsPanelTemplate>
             </ListBox.ItemsPanel>
+          <ListBox.Resources>
+              <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Transparent"></SolidColorBrush>
+          </ListBox.Resources>
         </ListBox>
         <WrapPanel Grid.Column="0" Grid.Row="3" 
                    HorizontalAlignment="Center"

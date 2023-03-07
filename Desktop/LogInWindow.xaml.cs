@@ -22,10 +22,10 @@ namespace Desktop
                 Validator.PassValid(LoginPasswTxb) == null)
             {
                 var loginUser = UserRepository.LogIn(LoginMailTxb.Text, LoginPasswTxb.Text);
-
+            
                 if (loginUser != null)
                 {
-                    var wind = new MainEmptyWindow("Alex");
+                    var wind = new MainEmptyWindow(UserRepository.NameTranfer(LoginMailTxb.Text));
                     wind.Show();
                     this.Hide();
                 }
@@ -33,7 +33,7 @@ namespace Desktop
                 {
                     MessageBox.Show("Пользователя не существует");
                 }
-
+            
             }
             else
             {

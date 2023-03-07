@@ -18,6 +18,11 @@
             <Image Height="75" Width="75" Margin="10, 10, 0, 0" Source="/Images/Photo_profile.png"/>
         </WrapPanel>
        
+        <WrapPanel Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <TextBlock Name="UserNameTxb" FontSize="18"
+                       Margin="10,0,0,0"></TextBlock>
+        </WrapPanel>
+        
         <WrapPanel Width="428" Grid.Row="1" HorizontalAlignment="Center" Orientation="Vertical">
             <TextBlock Text="Добро пожаловать!" FontSize="32"/>
             <TextBlock Text="" FontSize="32"></TextBlock>

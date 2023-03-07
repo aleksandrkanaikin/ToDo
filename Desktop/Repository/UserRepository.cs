@@ -37,5 +37,19 @@ namespace Desktop.Repository
             Users.Add(user);
             return user;
         }
+
+        public static string NameTranfer(string loginEmail)
+        {
+            var name = "";
+            foreach (var user in Users)
+            {
+                if (loginEmail == user.email)
+                {
+                    name = user.name;
+                    return name;
+                }
+            }
+            return null;
+        }
     }
 }
