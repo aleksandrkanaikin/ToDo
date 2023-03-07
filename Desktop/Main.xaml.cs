@@ -43,15 +43,15 @@ namespace Desktop
             
             Tasks = new ObservableCollection<TaskModel>
             {
-                new TaskModel{Id = 1, Name = "Go fishing with Stephen", Category = Categories[1], 
+                new TaskModel{Id = 1, Name = "Go fishing with Stephen", Category = Categories[0], 
                     Description = "Lorem ipsum dolor sit amet,consectetur adipiscing.", Date = "16.02.2023", Check = true},
-                new TaskModel{Id = 1, Name = "Go fishing with Stephen", Category = Categories[1], 
+                new TaskModel{Id = 1, Name = "Go fishing with Stephen", Category = Categories[2], 
                     Description = "Lorem ipsum dolor sit amet,consectetur adipiscing.", Date = "16.02.2023", Check = false},
                 new TaskModel{Id = 1, Name = "Go fishing with Stephen", Category = Categories[1], 
                     Description = "Lorem ipsum dolor sit amet,consectetur adipiscing.", Date = "16.02.2023", Check = false},
-                new TaskModel{Id = 1, Name = "Go fishing with Stephen", Category = Categories[1], 
+                new TaskModel{Id = 1, Name = "Go fishing with Stephen", Category = Categories[3], 
                     Description = "Lorem ipsum dolor sit amet,consectetur adipiscing.", Date = "16.02.2023", Check = false},
-                new TaskModel{Id = 1, Name = "Go fishing with Stephen", Category = Categories[1], 
+                new TaskModel{Id = 1, Name = "Go fishing with Stephen", Category = Categories[2], 
                     Description = "Lorem ipsum dolor sit amet,consectetur adipiscing.", Date = "16.02.2023", Check = false}
             };
             TaskList.ItemsSource = Tasks;
