@@ -151,5 +151,13 @@
                 </Button>
             </StackPanel>
         </Border>
+        <StackPanel Grid.Column="0" Grid.Row="2">
+            <Button Name="TasksBtn" Background="Transparent" 
+                    Content="Задачи" Foreground="Black" HorizontalAlignment="Stretch"
+                    Click="TasksBtn_OnClick"></Button>
+            <Button Name="HistoryBtn" Background="Transparent" Margin="0,6,0,0"
+                    Content="История" Foreground="Black" HorizontalAlignment="Stretch"
+                    Click="HistoryBtn_OnClick"></Button>
+        </StackPanel>
     </Grid>
 </Window>

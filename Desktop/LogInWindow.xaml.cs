@@ -18,12 +18,15 @@ namespace Desktop
         }
         private void LoginBtn_Click(object sender, RoutedEventArgs e)
         {
-            if (Validator.EmailValid(LoginMailTxb) == null && 
-                Validator.PassValid(LoginPasswTxb) == null)
-            {
-                var loginUser = UserRepository.LogIn(LoginMailTxb.Text, LoginPasswTxb.Text);
+            // var wind = new Main(UserRepository.NameTranfer(LoginMailTxb.Text));
+            // wind.Show();
+            // this.Hide();
+             if (Validator.EmailValid(LoginMailTxb) == null && 
+                 Validator.PassValid(LoginPasswTxb) == null)
+             {
+                 var loginUser = UserRepository.LogIn(LoginMailTxb.Text, LoginPasswTxb.Text);
             
-                if (loginUser != null)
+                 if (loginUser != null)
                 {
                     var wind = new MainEmptyWindow(UserRepository.NameTranfer(LoginMailTxb.Text));
                     wind.Show();

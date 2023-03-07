@@ -27,7 +27,8 @@
         </WrapPanel>
         <WrapPanel Grid.Column="0" Grid.Row="1" VerticalAlignment="Bottom">
             <TextBox Width="342" Height="61"
-                     Margin="29,0,0,0">
+                     Margin="29,0,0,0" TextWrapping="Wrap"
+                     FontSize="18">
                 <TextBox.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="15"></Setter>
@@ -41,7 +42,8 @@
         </WrapPanel>
         <WrapPanel Grid.Column="0" Grid.Row="3" VerticalAlignment="Bottom">
             <TextBox Height="61" Width="342"
-                     Margin="29,0,0,0">
+                     Margin="29,0,0,0" TextWrapping="Wrap"
+                     FontSize="18">
                 <TextBox.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="15"></Setter>
@@ -55,7 +57,8 @@
         </WrapPanel>
         <WrapPanel Grid.Column="0" Grid.Row="5" VerticalAlignment="Bottom">
             <TextBox Width="342" Height="154" 
-                     Margin="29,0,0,0">
+                     Margin="29,0,0,0" TextWrapping="Wrap"
+                     FontSize="18">
                 <TextBox.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="15"></Setter>

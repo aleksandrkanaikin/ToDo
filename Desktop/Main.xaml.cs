@@ -15,6 +15,8 @@ namespace Desktop
         private List<SolidColorBrush> Color;
         private ObservableCollection<TaskCategoryModel> Categories;
         private ObservableCollection<TaskModel> Tasks;
+        private ObservableCollection<TaskModel> ComplitedTasks;
+
         
         public Main(string name)
         {
@@ -84,6 +86,26 @@ namespace Desktop
         {
             TaskModel task = (TaskModel) TaskList.SelectedItem;
             Tasks.Remove(task);
+        }
+
+        private void TasksBtn_OnClick(object sender, RoutedEventArgs e)
+        {
+            
+            TaskList.ItemsSource = Tasks;
+        }
+
+        private void HistoryBtn_OnClick(object sender, RoutedEventArgs e)
+        {
+            ComplitedTasks = new ObservableCollection<TaskModel>();
+            foreach (var task in Tasks)
+            {
+                if (task.Check == true)
+                {
+                    ComplitedTasks.Add(task);
+                }
+            }
+            
+            TaskList.ItemsSource = ComplitedTasks;
         }
     }
 }
