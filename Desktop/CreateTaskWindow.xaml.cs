@@ -1,4 +1,7 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
+using System.Windows.Media;
+using Entities;
 
 namespace Desktop
 {
@@ -20,7 +23,16 @@ namespace Desktop
 
         private void CreateTaskBtn_OnClick(object sender, RoutedEventArgs e)
         {
-            var wind = new Main(userName);
+            Random random = new Random();
+            TaskModel newTask = new TaskModel
+            {
+                Category = new TaskCategoryModel(TaskCategoryTxb.Text, new SolidColorBrush()), Check = false,
+                Date = TaskDate.Text, Description = TaskDescriptionTxb.Text, Id = random.Next(1, 10),
+                Name = TaskNameTxb.Text
+            };//Id = random.Next(1, 10), Category = new TaskCategoryModel(TaskCategoryTxb.Text, new SolidColorBrush()),
+                 //Name = TaskNameTxb.Text, Description = TaskDescriptionTxb.Text, Check = false, Date = TaskDate.Text
+            
+            var wind = new Main(userName, newTask);
             wind.Show();
             this.Close();
         }

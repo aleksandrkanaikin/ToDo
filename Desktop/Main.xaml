@@ -29,7 +29,7 @@
                           Margin="22" BorderThickness="3"
                           BorderBrush="#6074F9" IsChecked="{Binding Path=Check}"></CheckBox>
                 <WrapPanel Orientation="Vertical" HorizontalAlignment="Stretch">
-                    <TextBlock MaxWidth="200" HorizontalAlignment="Left"
+                    <TextBlock Width="250" HorizontalAlignment="Left"
                                Text="{Binding Path=Name}"
                                Padding="0,10,0,0" FontSize="16" 
                                TextTrimming="WordEllipsis"></TextBlock>
@@ -88,17 +88,14 @@
                     <WrapPanel />
                 </ItemsPanelTemplate>
             </ListBox.ItemsPanel>
-          <ListBox.Resources>
-              <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Transparent"></SolidColorBrush>
-          </ListBox.Resources>
         </ListBox>
         <WrapPanel Grid.Column="0" Grid.Row="3" 
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
                    Height="90">
-            <Button Width="56" Height="56"
+            <Button Name="CreateNewTaskBtn" Width="56" Height="56"
                     Foreground="White" Content="+"
-                    FontSize="24">
+                    FontSize="24" Click="CreateNewTaskBtn_OnClick">
                 <Button.Background>
                     <LinearGradientBrush StartPoint="0.8,1" EndPoint="0.2,1">
                         <GradientStop Color="#F96060"></GradientStop>
@@ -152,10 +149,12 @@
             </StackPanel>
         </Border>
         <StackPanel Grid.Column="0" Grid.Row="2">
-            <Button Name="TasksBtn" Background="Transparent" 
+            <Button Name="TasksBtn" Background="Transparent"
+                    Height="40" FontSize="16"
                     Content="Задачи" Foreground="Black" HorizontalAlignment="Stretch"
                     Click="TasksBtn_OnClick"></Button>
-            <Button Name="HistoryBtn" Background="Transparent" Margin="0,6,0,0"
+            <Button Name="HistoryBtn" Background="Transparent" 
+                    Height="40" FontSize="16"
                     Content="История" Foreground="Black" HorizontalAlignment="Stretch"
                     Click="HistoryBtn_OnClick"></Button>
         </StackPanel>

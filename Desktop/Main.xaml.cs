@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Documents;
@@ -18,7 +19,7 @@ namespace Desktop
         private ObservableCollection<TaskModel> ComplitedTasks;
 
         
-        public Main(string name)
+        public Main(string name, TaskModel newTask)
         {
             InitializeComponent();
 
@@ -42,11 +43,11 @@ namespace Desktop
                 new TaskCategoryModel("Отдых", Color[random.Next(Color.Count)])
             };
             CateogryList.ItemsSource = Categories;
-            
+
             Tasks = new ObservableCollection<TaskModel>
             {
                 new TaskModel{Id = 1, Name = "Go fishing with Stephen", Category = Categories[0], 
-                    Description = "Lorem ipsum dolor sit amet,consectetur adipiscing.", Date = "16.02.2023", Check = true},
+                    Description = "Lorem ipsum dolor sit amet,!consectetur adipiscing.", Date = "16.02.2023", Check = true},
                 new TaskModel{Id = 1, Name = "Go fishing with Stephen", Category = Categories[2], 
                     Description = "Lorem ipsum dolor sit amet,consectetur adipiscing.", Date = "16.02.2023", Check = false},
                 new TaskModel{Id = 1, Name = "Go fishing with Stephen", Category = Categories[1], 
@@ -56,6 +57,7 @@ namespace Desktop
                 new TaskModel{Id = 1, Name = "Go fishing with Stephen", Category = Categories[2], 
                     Description = "Lorem ipsum dolor sit amet,consectetur adipiscing.", Date = "16.02.2023", Check = false}
             };
+            Tasks.Add(newTask);
             TaskList.ItemsSource = Tasks;
         }
 
@@ -90,7 +92,6 @@ namespace Desktop
 
         private void TasksBtn_OnClick(object sender, RoutedEventArgs e)
         {
-            
             TaskList.ItemsSource = Tasks;
         }
 
@@ -104,8 +105,13 @@ namespace Desktop
                     ComplitedTasks.Add(task);
                 }
             }
-            
             TaskList.ItemsSource = ComplitedTasks;
+        }
+
+        private void CreateNewTaskBtn_OnClick(object sender, RoutedEventArgs e)
+        {
+            new CreateTaskWindow(UserNameTxb.Text).Show();
+            Hide();
         }
     }
 }
