@@ -59,6 +59,14 @@ namespace Desktop
             };
             Tasks.Add(newTask);
             TaskList.ItemsSource = Tasks;
+
+            // foreach (var category in Categories)
+            // {
+            //     if (category != newTask.Category)
+            //     {
+            //         Categories.Add(newTask.Category);
+            //     }
+            // }
         }
 
         private void CateogryList_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -69,10 +77,21 @@ namespace Desktop
         {
             if (TaskList.SelectedItem is TaskModel task)
             {
-                TaskNameTxb.Text = task.Name;
-                TaskDateTxb.Text = task.Date;
-                TaskDescriptionTxb.Text = task.Description;
-                TaskFullDescription.Visibility = Visibility.Visible;
+                if(task.Check == false)
+                {
+                    TaskNameTxb.Text = task.Name;
+                    TaskDateTxb.Text = task.Date;
+                    TaskDescriptionTxb.Text = task.Description;
+                    TaskComplitedBtn.Visibility = Visibility.Visible;
+                    DeleteTaskBtn.Visibility = Visibility.Visible;
+                    TaskFullDescription.Visibility = Visibility.Visible;
+                }
+                else
+                {
+                    TaskFullDescription.Visibility = Visibility.Visible;
+                    TaskComplitedBtn.Visibility = Visibility.Hidden;
+                    DeleteTaskBtn.Visibility = Visibility.Hidden;
+                }
             }
             else TaskFullDescription.Visibility = Visibility.Hidden;
         }
@@ -105,6 +124,13 @@ namespace Desktop
                     ComplitedTasks.Add(task);
                 }
             }
+            // for (var i = 0; i < Tasks.Count; i++)
+            // {
+            //     if (Tasks[i].Check == true)
+            //     {
+            //         Tasks.Remove(Tasks[i]);
+            //     }
+            // }
             TaskList.ItemsSource = ComplitedTasks;
         }
 
