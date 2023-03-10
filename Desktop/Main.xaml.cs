@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Media;
 using Desktop.Repository;
@@ -17,8 +19,8 @@ namespace Desktop
         private ObservableCollection<TaskCategoryModel> Categories;
         private ObservableCollection<TaskModel> Tasks;
         private ObservableCollection<TaskModel> ComplitedTasks;
+        private ObservableCollection<TaskModel> SelectedCategory;
 
-        
         public Main(string name, TaskModel newTask)
         {
             InitializeComponent();
@@ -42,6 +44,10 @@ namespace Desktop
                 new TaskCategoryModel("Учеба", Color[random.Next(Color.Count)]),
                 new TaskCategoryModel("Отдых", Color[random.Next(Color.Count)])
             };
+            if (Categories.Contains(newTask.Category) == false)
+            {
+                Categories.Add(newTask.Category);
+            }
             CateogryList.ItemsSource = Categories;
 
             Tasks = new ObservableCollection<TaskModel>
@@ -59,18 +65,24 @@ namespace Desktop
             };
             Tasks.Add(newTask);
             TaskList.ItemsSource = Tasks;
-
-            // foreach (var category in Categories)
-            // {
-            //     if (category != newTask.Category)
-            //     {
-            //         Categories.Add(newTask.Category);
-            //     }
-            // }
         }
+        
+        
 
         private void CateogryList_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            SelectedCategory = new ObservableCollection<TaskModel>();
+            if (CateogryList.SelectedItem is TaskCategoryModel category)
+            {
+                for (int i = 0; i < Tasks.Count; i++)
+                {
+                    if (category == Tasks[i].Category)
+                    {
+                        SelectedCategory.Add(Tasks[i]);
+                    }
+                }
+            }
+            TaskList.ItemsSource = SelectedCategory;
         }
 
         private void TaskList_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -123,14 +135,7 @@ namespace Desktop
                 {
                     ComplitedTasks.Add(task);
                 }
-            }
-            // for (var i = 0; i < Tasks.Count; i++)
-            // {
-            //     if (Tasks[i].Check == true)
-            //     {
-            //         Tasks.Remove(Tasks[i]);
-            //     }
-            // }
+            } 
             TaskList.ItemsSource = ComplitedTasks;
         }
 

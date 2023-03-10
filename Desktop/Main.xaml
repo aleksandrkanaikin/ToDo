@@ -27,7 +27,8 @@
                 <CheckBox Name="IsTaskComplited" HorizontalAlignment="Center" 
                           VerticalAlignment="Center"
                           Margin="22" BorderThickness="3"
-                          BorderBrush="#6074F9" IsChecked="{Binding Path=Check}"></CheckBox>
+                          BorderBrush="#6074F9" 
+                          IsChecked="{Binding Path=Check}"></CheckBox>
                 <WrapPanel Orientation="Vertical" HorizontalAlignment="Stretch">
                     <TextBlock Width="250" HorizontalAlignment="Left"
                                Text="{Binding Path=Name}"
@@ -67,7 +68,7 @@
         <ListBox Name="CateogryList" BorderThickness="0" 
                  Grid.Column="1" VerticalAlignment="Bottom"
                  HorizontalAlignment="Stretch" SelectionChanged="CateogryList_OnSelectionChanged"
-                 ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemTemplate="{StaticResource ListCategoryTemplate}">
+                 ScrollViewer.VerticalScrollBarVisibility="Disabled" ItemTemplate="{StaticResource ListCategoryTemplate}">
            <ListBox.ItemsPanel>
                <ItemsPanelTemplate>
                    <WrapPanel />
