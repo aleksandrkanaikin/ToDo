@@ -24,25 +24,21 @@
         </WrapPanel>
         
         <WrapPanel Width="428" Grid.Row="1" HorizontalAlignment="Center" Orientation="Vertical">
-            <TextBlock Text="Добро пожаловать!" FontSize="32"/>
+            <TextBlock Text="Добро пожаловать!" FontSize="32" Style="{StaticResource TextBlockStyle}"/>
             <TextBlock Text="" FontSize="32"></TextBlock>
-            <TextBlock Text="Создайте свою первую задачу!" TextWrapping="Wrap" FontSize="32"></TextBlock>
+            <TextBlock Text="Создайте свою первую задачу!" TextWrapping="Wrap" FontSize="32" Style="{StaticResource TextBlockStyle}"></TextBlock>
         </WrapPanel>
        
         <WrapPanel Grid.Row="2" HorizontalAlignment="Center">
             <Button
                 Name="NewTaskButton"
-                Height="Auto"
-                Width="Auto"
-                Margin="5"
-                Padding="10"
-                Background="#F96060"
+                Height="Auto" Width="Auto"
+                Margin="5" Padding="10"
                 BorderBrush="#F96060"
+                Style="{StaticResource ButtonStyle}"
                 Content="Создать первую задачу"
                 FontSize="24"
-                Foreground="White"
                 Click="NewTaskButton_OnClick">
-               
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="5, 5, 5, 5"/>

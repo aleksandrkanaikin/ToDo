@@ -66,6 +66,7 @@
         <Compile Include="Repository\UserRepository.cs" />
         <Compile Include="Validator.cs" />
         <Page Include="CreateTaskWindow.xaml" />
+        <Page Include="Dictionaries\ButtonDictionary.xaml" />
         <Page Include="LogInWindow.xaml">
             <Generator>MSBuild:Compile</Generator>
             <SubType>Designer</SubType>
@@ -108,6 +109,9 @@
         <Project>{2f118337-3e6d-425c-b543-24213e17479d}</Project>
         <Name>Entities</Name>
       </ProjectReference>
+    </ItemGroup>
+    <ItemGroup>
+      <Resource Include="Fonts\Actor.ttf" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

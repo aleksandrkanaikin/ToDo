@@ -27,53 +27,59 @@
         <WrapPanel Grid.RowSpan="7" Grid.Column="0">
             <Image Margin="69,70,0,0" Source="Images/Logo.png" Height="149" Width="149" />
         </WrapPanel>
-        <WrapPanel Grid.Row="0"  Grid.Column="1" VerticalAlignment="Bottom">
-            <TextBlock FontSize="31px" FontFamily="Actor" >  Добро пожаловать!</TextBlock>
+        <WrapPanel Grid.Row="0"  Grid.Column="1" 
+                   VerticalAlignment="Bottom">
+            <TextBlock FontSize="31"
+                       Style="{StaticResource TextBlockStyle}">Добро пожаловать!</TextBlock>
         </WrapPanel> 
-        <WrapPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom">
-            <TextBlock FontSize="20px" FontFamily="Actor">Почта</TextBlock>
+        <WrapPanel Grid.Column="1" Grid.Row="1" 
+                   VerticalAlignment="Bottom">
+            <TextBlock FontSize="20" 
+                       Style="{StaticResource TextBlockStyle}">Почта</TextBlock>
         </WrapPanel>
         <WrapPanel Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Orientation="Vertical">
-            <TextBox x:Name="LoginMailTxb" Text="Введите почту" FontSize="20" Foreground="Gray"
-                     BorderThickness="0,0,0,1"
-                     GotFocus="LoginMailTxb_OnGotFocus" LostFocus="LoginMailTxb_OnLostFocus" 
-                     Width="326" Height="37"></TextBox>
+            <TextBox x:Name="LoginMailTxb" 
+                     Text="Введите почту" 
+                     Style="{StaticResource TextBoxStyle}"
+                     GotFocus="LoginMailTxb_OnGotFocus" 
+                     LostFocus="LoginMailTxb_OnLostFocus"></TextBox>
             <Label Name="ErrorEmail" FontSize="9" FontFamily="Actor" Foreground="Red"></Label>
         </WrapPanel>
         <WrapPanel Grid.Column="1" Grid.Row="3" VerticalAlignment="Center">
-            <TextBlock FontFamily="Actor" FontSize="20">Пароль</TextBlock>
+            <TextBlock FontSize="20" Style="{StaticResource TextBlockStyle}">Пароль</TextBlock>
         </WrapPanel>
         <WrapPanel Grid.Column="1" Grid.Row="4" VerticalAlignment="Center"  Orientation="Vertical">
-            <TextBox x:Name="LoginPasswTxb" Width="326" Height="34" Text="Введите пароль" 
-                     FontSize="20" Foreground="Gray" BorderThickness="0,0,0,1"
+            <TextBox x:Name="LoginPasswTxb"
+                     Text="Введите пароль" 
+                     Style="{StaticResource TextBoxStyle}"
                      GotFocus="LoginPassw_txb_OnGotFocus" LostFocus="LoginPassw_txb_OnLostFocus"></TextBox>
             <Label Name="ErrorPassword" FontSize="9" FontFamily="Actor" Foreground="Red"></Label>
         </WrapPanel>
         <WrapPanel Grid.Column="1" Grid.Row="5" HorizontalAlignment="Center"> 
-            <TextBlock FontFamily="Actor" FontSize="18"> Восстановить пароль</TextBlock>
+            <TextBlock FontSize="18" Style="{StaticResource TextBlockStyle}"> Восстановить пароль</TextBlock>
         </WrapPanel>
         <WrapPanel Grid.Column="1" Grid.Row="6"> 
-            <Button x:Name="LoginBtn" Width="327" Height="48" Background="#F96060" 
-                    Click="LoginBtn_Click">
+            <Button x:Name="LoginBtn" Width="327"  
+                    Click="LoginBtn_Click"
+                    Content="Войти" 
+                    Style="{StaticResource ButtonStyle}">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="15,15,0,0"></Setter>
                     </Style>
                 </Button.Resources>
-                <TextBlock TextAlignment="Center" FontFamily="Actor" FontSize="18"
-                           Foreground="White"> Войти</TextBlock>
             </Button>
         </WrapPanel>
         <WrapPanel Grid.Column="1" Grid.Row="7">
-            <Button x:Name="RegistrationBtn" Width="327" Height="48"
-                    Background="#F96060" Click="RegistrationBtn_Click">
+            <Button x:Name="RegistrationBtn" Width="327" 
+                    Content="Регистрация"
+                    Click="RegistrationBtn_Click"
+                    Style="{StaticResource ButtonStyle}">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="0,0,15,15"></Setter>
                     </Style>
                 </Button.Resources>
-                <TextBlock TextAlignment="Center" FontFamily="Actor" FontSize="18" 
-                           Foreground="White"> Регистрация</TextBlock>
             </Button>
         </WrapPanel>
     </Grid>

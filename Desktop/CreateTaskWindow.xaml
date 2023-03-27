@@ -22,12 +22,15 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <WrapPanel Grid.Column="0" Grid.Row="0" VerticalAlignment="Bottom">
-            <TextBlock FontSize="18" FontFamily="Actor"
+            <TextBlock FontSize="18" Style="{StaticResource TextBlockStyle}"
                        Margin="43,0,0,0">Название</TextBlock>
         </WrapPanel>
         <WrapPanel Grid.Column="0" Grid.Row="1" VerticalAlignment="Bottom">
-            <TextBox Name="TaskNameTxb" Width="342" Height="61"
-                     Margin="29,0,0,0" TextWrapping="Wrap"
+            <TextBox Name="TaskNameTxb" 
+                     Width="342" Height="61"
+                     Style="{StaticResource TextBoxStyle}"
+                     Margin="29,0,0,0"
+                     TextWrapping="Wrap"
                      FontSize="18">
                 <TextBox.Resources>
                     <Style TargetType="Border">
@@ -37,12 +40,15 @@
             </TextBox>
         </WrapPanel>
         <WrapPanel Grid.Column="0" Grid.Row="2" VerticalAlignment="Bottom">
-            <TextBlock FontSize="18" FontFamily="Actor"
+            <TextBlock FontSize="18" Style="{StaticResource TextBlockStyle}"
                        Margin="43,0,0,0">Категория</TextBlock>
         </WrapPanel>
         <WrapPanel Grid.Column="0" Grid.Row="3" VerticalAlignment="Bottom">
-            <TextBox Name="TaskCategoryTxb" Height="61" Width="342"
-                     Margin="29,0,0,0" TextWrapping="Wrap"
+            <TextBox Name="TaskCategoryTxb" 
+                     Height="61" Width="342"
+                     Style="{StaticResource TextBoxStyle}"
+                     Margin="29,0,0,0" 
+                     TextWrapping="Wrap"
                      FontSize="18">
                 <TextBox.Resources>
                     <Style TargetType="Border">
@@ -52,12 +58,15 @@
             </TextBox>
         </WrapPanel>
         <WrapPanel Grid.Column="0" Grid.Row="4" VerticalAlignment="Bottom">
-            <TextBlock FontSize="18" FontFamily="Actor" 
+            <TextBlock FontSize="18" Style="{StaticResource TextBlockStyle}"
                        Margin="43,0,0,0">Описание</TextBlock>
         </WrapPanel>
         <WrapPanel Grid.Column="0" Grid.Row="5" VerticalAlignment="Bottom">
-            <TextBox Name="TaskDescriptionTxb" Width="342" Height="154" 
-                     Margin="29,0,0,0" TextWrapping="Wrap"
+            <TextBox Name="TaskDescriptionTxb"
+                     Width="342" Height="154"
+                     Style="{StaticResource TextBoxStyle}"
+                     Margin="29,0,0,0" 
+                     TextWrapping="Wrap"
                      FontSize="18">
                 <TextBox.Resources>
                     <Style TargetType="Border">
@@ -66,18 +75,18 @@
                 </TextBox.Resources>
             </TextBox>
         </WrapPanel>
-        <WrapPanel Grid.Column="0" Grid.Row="6" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Button Name="CreateTaskBtn" Background="#50AF54" Width="327" Height="48"
+        <WrapPanel Grid.Column="0" Grid.Row="6"
+                   VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button Name="CreateTaskBtn" Background="#50AF54"
+                    Style="{StaticResource ButtonStyle}"
+                    Width="327"
+                    Content="Создать"
                     Click="CreateTaskBtn_OnClick">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="15"></Setter>
                     </Style>
                 </Button.Resources>
-                <TextBlock FontSize="18" FontFamily="Actor" Foreground="White"
-                           VerticalAlignment="Center" HorizontalAlignment="Center">
-                    Создать
-                </TextBlock>
             </Button>
         </WrapPanel>
         <WrapPanel Grid.Column="1" Grid.Row="1" Grid.RowSpan="4"
@@ -86,20 +95,20 @@
         </WrapPanel>
         <WrapPanel Grid.Column="1" Grid.Row="5" 
                    VerticalAlignment="Bottom" HorizontalAlignment="Center">
-            
         </WrapPanel>
         <WrapPanel Grid.Column="1" Grid.Row="6"
                    VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Button Background="#E04321" Width="327" Height="48" Name="CancelButton" Click="CancelButton_OnClick">
+            <Button Background="#E04321"
+                    Style="{StaticResource ButtonStyle}"
+                    Width="327"
+                    Content="Отмена"
+                    Name="CancelButton" 
+                    Click="CancelButton_OnClick">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="15"></Setter>
                     </Style>
                 </Button.Resources>
-                <TextBlock FontSize="18" FontFamily="Actor" Foreground="White"
-                           VerticalAlignment="Center" HorizontalAlignment="Center">
-                    Отмена
-                </TextBlock>
             </Button>
         </WrapPanel>
     </Grid>

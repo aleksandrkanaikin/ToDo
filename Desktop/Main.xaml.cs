@@ -44,6 +44,14 @@ namespace Desktop
                 new TaskCategoryModel("Учеба", Color[random.Next(Color.Count)]),
                 new TaskCategoryModel("Отдых", Color[random.Next(Color.Count)])
             };
+            
+            for (var i = 0; i < Categories.Count; i++)
+            {
+                if (newTask.Category.CategoryName != Categories[i].CategoryName)
+                {
+                    Categories.Add(newTask.Category);
+                }
+            }
             if (Categories.Contains(newTask.Category) == false)
             {
                 Categories.Add(newTask.Category);
@@ -68,7 +76,6 @@ namespace Desktop
         }
         
         
-
         private void CateogryList_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             SelectedCategory = new ObservableCollection<TaskModel>();

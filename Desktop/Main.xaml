@@ -8,11 +8,15 @@
         Title="Main" Height="600" Width="800"
         ResizeMode="NoResize">
     <Window.Resources>
+        <FontFamily x:Key="Actor">/Fonts/#Actor</FontFamily>
         <DataTemplate x:Key="ListCategoryTemplate">
             <StackPanel>
                 <TextBlock
-                    FontSize="16" Foreground = "{Binding Path=Color}"
-                    Text="{Binding Path=CategoryName}" Margin="6">
+                    FontSize="16"
+                    FontFamily="{StaticResource Actor}"
+                    Foreground = "{Binding Path=Color}"
+                    Text="{Binding Path=CategoryName}" 
+                    Margin="6">
                 </TextBlock>
             </StackPanel>
         </DataTemplate>
@@ -32,10 +36,13 @@
                 <WrapPanel Orientation="Vertical" HorizontalAlignment="Stretch">
                     <TextBlock Width="250" HorizontalAlignment="Left"
                                Text="{Binding Path=Name}"
-                               Padding="0,10,0,0" FontSize="16" 
+                               Padding="0,10,0,0"
+                               FontSize="16" 
+                               FontFamily="{StaticResource Actor}"
                                TextTrimming="WordEllipsis"></TextBlock>
                     <TextBlock VerticalAlignment="Bottom" Foreground="#9B9B9B"
                                FontSize="16"
+                               FontFamily="{StaticResource Actor}"
                                Text="{Binding Path=Date}"></TextBlock>
                 </WrapPanel>
             </StackPanel>
@@ -64,7 +71,6 @@
                    HorizontalAlignment="Center">
             <TextBlock Name="UserNameTxb" FontSize="16"></TextBlock>
         </WrapPanel>
-        
         <ListBox Name="CateogryList" BorderThickness="0" 
                  Grid.Column="1" VerticalAlignment="Bottom"
                  HorizontalAlignment="Stretch" SelectionChanged="CateogryList_OnSelectionChanged"
@@ -75,7 +81,6 @@
                </ItemsPanelTemplate>
            </ListBox.ItemsPanel>
         </ListBox>
-        
         <ListBox Name="TaskList"
                  Grid.Column="1" Grid.Row="2"
                  HorizontalAlignment="Stretch"
@@ -100,7 +105,6 @@
                 <Button.Background>
                     <LinearGradientBrush StartPoint="0.8,1" EndPoint="0.2,1">
                         <GradientStop Color="#F96060"></GradientStop>
-                        <!--<GradientStop Color="#F68888"></GradientStop>-->
                     </LinearGradientBrush>
                 </Button.Background>
                 <Button.Resources>
@@ -118,18 +122,21 @@
             <StackPanel>
                 <TextBlock Name="TaskNameTxb" VerticalAlignment="Top"
                            HorizontalAlignment="Center" Margin="10"
-                           FontSize="20" TextWrapping="Wrap"></TextBlock>
+                           FontSize="20" TextWrapping="Wrap"
+                           FontFamily="{StaticResource Actor}"></TextBlock>
                 <TextBlock Name="TaskDateTxb" VerticalAlignment="Top"
                            HorizontalAlignment="Center" Margin="10" 
-                           FontSize="20" TextWrapping="Wrap"></TextBlock>
+                           FontSize="20" TextWrapping="Wrap"
+                           FontFamily="{StaticResource Actor}"></TextBlock>
                 <TextBlock Name="TaskDescriptionTxb" Margin="10,25,0,0"
                            FontSize="16" TextWrapping="Wrap"
-                           Text="{Binding Path=Tasks.description}"></TextBlock>
-                <Button Name="TaskComplitedBtn" 
+                           Text="{Binding Path=Tasks.description}"
+                           FontFamily="{StaticResource Actor}"></TextBlock>
+                <Button Name="TaskComplitedBtn"
                         VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
-                        Margin="10,50,10,0" Height="40" 
-                        Background="#F96060" Content="Готово" Foreground="White"
-                        FontSize="18" Click="TaskComplitedBtn_OnClick">
+                        Margin="10,50,10,0" 
+                        Content="Готово" Style="{StaticResource ButtonStyle}"
+                        Click="TaskComplitedBtn_OnClick">
                     <Button.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="15,15,3,3"></Setter>
@@ -138,9 +145,9 @@
                 </Button>
                 <Button Name="DeleteTaskBtn" 
                         VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
-                        Margin="10,10,10,0" Height="40" 
-                        Background="#F96060" Content="Удалить" Foreground="White"
-                        FontSize="18" Click="DeleteTaskBtn_OnClick">
+                        Margin="10,10,10,0" 
+                        Content="Удалить" Style="{StaticResource ButtonStyle}"
+                        Click="DeleteTaskBtn_OnClick">
                     <Button.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="3,3,15,15"></Setter>
@@ -152,11 +159,18 @@
         <StackPanel Grid.Column="0" Grid.Row="2">
             <Button Name="TasksBtn" Background="Transparent"
                     Height="40" FontSize="16"
-                    Content="Задачи" Foreground="Black" HorizontalAlignment="Stretch"
+                    BorderBrush="Transparent"
+                    Content="Задачи" Foreground="Black"
+                    HorizontalAlignment="Stretch"
+                    FontFamily="{StaticResource Actor}"
                     Click="TasksBtn_OnClick"></Button>
             <Button Name="HistoryBtn" Background="Transparent" 
-                    Height="40" FontSize="16"
-                    Content="История" Foreground="Black" HorizontalAlignment="Stretch"
+                    Height="48" FontSize="16" 
+                    BorderBrush="Transparent"
+                    Content="История" 
+                    Foreground="Black" 
+                    HorizontalAlignment="Stretch"
+                    FontFamily="{StaticResource Actor}"
                     Click="HistoryBtn_OnClick"></Button>
         </StackPanel>
     </Grid>
