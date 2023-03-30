@@ -53,8 +53,8 @@
         <Compile Include="CreateTaskWindow.xaml.cs">
           <DependentUpon>CreateTaskWindow.xaml</DependentUpon>
         </Compile>
-        <Compile Include="Main.xaml.cs">
-          <DependentUpon>Main.xaml</DependentUpon>
+        <Compile Include="MainWindow.xaml.cs">
+          <DependentUpon>MainWindow.xaml</DependentUpon>
         </Compile>
         <Compile Include="MainEmptyWindow.xaml.cs">
           <DependentUpon>MainEmptyWindow.xaml</DependentUpon>
@@ -79,7 +79,7 @@
             <DependentUpon>LogInWindow.xaml</DependentUpon>
             <SubType>Code</SubType>
         </Compile>
-        <Page Include="Main.xaml" />
+        <Page Include="MainWindow.xaml" />
         <Page Include="MainEmptyWindow.xaml" />
         <Page Include="RegistrationWindow.xaml" />
     </ItemGroup>
