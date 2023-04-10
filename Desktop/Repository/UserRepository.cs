@@ -39,7 +39,7 @@ namespace Desktop.Repository
             return user;
         }
 
-        public static string NameTranfer(string loginEmail)
+        public static string NameTransfer(string loginEmail)
         {
             var name = "";
             foreach (var user in Users)

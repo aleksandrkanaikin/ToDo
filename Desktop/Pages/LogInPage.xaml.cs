@@ -1,26 +1,21 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-using Desktop.Properties;
 using Desktop.Repository;
 
-namespace Desktop
+namespace Desktop.Pages
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class LogInWindow
+    public partial class LogInPage : Page
     {
-        public LogInWindow()
+        public LogInPage()
         {
             InitializeComponent();
-            Manager.CurrentWindow = this;
+            ShowsNavigationUI = false;
         }
         private void LoginBtn_Click(object sender, RoutedEventArgs e)
         {
             var wind = new CreateTaskWindow(UserRepository.NameTransfer(LoginMailTxb.Text));
             wind.Show();
-            this.Hide();
             //  if (Validator.EmailValid(LoginMailTxb) == null && 
             //      Validator.PassValid(LoginPasswTxb) == null)
             //  {
@@ -28,7 +23,7 @@ namespace Desktop
             //
             //      if (loginUser != null)
             //     {
-            //         var wind = new MainEmptyWindow(UserRepository.NameTranfer(LoginMailTxb.Text));
+            //         var wind = new MainEmptyWindow(UserRepository.NameTransfer(LoginMailTxb.Text));
             //         wind.Show();
             //         this.Hide();
             //     }
@@ -47,10 +42,7 @@ namespace Desktop
 
         private void RegistrationBtn_Click(object sender, RoutedEventArgs e)
         {
-            var window = new RegistrationWindow();
-            window.Title = "new Window";
-            window.Show();
-            Manager.CurrentWindow.Hide();
+            NavigationService?.Navigate(new RegistrationPage());
         }
 
         #region Textboxes

@@ -53,6 +53,9 @@
         <Compile Include="CreateTaskWindow.xaml.cs">
           <DependentUpon>CreateTaskWindow.xaml</DependentUpon>
         </Compile>
+        <Compile Include="Main2.xaml.cs">
+          <DependentUpon>Main2.xaml</DependentUpon>
+        </Compile>
         <Compile Include="MainWindow.xaml.cs">
           <DependentUpon>MainWindow.xaml</DependentUpon>
         </Compile>
@@ -60,6 +63,12 @@
           <DependentUpon>MainEmptyWindow.xaml</DependentUpon>
         </Compile>
         <Compile Include="Manager.cs" />
+        <Compile Include="Pages\LogInPage.xaml.cs">
+          <DependentUpon>LogInPage.xaml</DependentUpon>
+        </Compile>
+        <Compile Include="Pages\RegistrationPage.xaml.cs">
+          <DependentUpon>RegistrationPage.xaml</DependentUpon>
+        </Compile>
         <Compile Include="RegistrationWindow.xaml.cs">
           <DependentUpon>RegistrationWindow.xaml</DependentUpon>
         </Compile>
@@ -79,8 +88,11 @@
             <DependentUpon>LogInWindow.xaml</DependentUpon>
             <SubType>Code</SubType>
         </Compile>
+        <Page Include="Main2.xaml" />
         <Page Include="MainWindow.xaml" />
         <Page Include="MainEmptyWindow.xaml" />
+        <Page Include="Pages\LogInPage.xaml" />
+        <Page Include="Pages\RegistrationPage.xaml" />
         <Page Include="RegistrationWindow.xaml" />
     </ItemGroup>
     <ItemGroup>

@@ -72,7 +72,7 @@ namespace Desktop
                     Description = "Lorem ipsum dolor sit amet,consectetur adipiscing.", Date = "16.02.2023", Check = false}
             };
             Tasks.Add(newTask);
-            TaskList.ItemsSource = Tasks;
+            //TaskList.ItemsSource = Tasks;
         }
         
         
