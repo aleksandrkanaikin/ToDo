@@ -12,8 +12,7 @@ namespace Desktop.Pages
         {
             InitializeComponent();
         }
-        
-        
+
         #region Texboxes
         private void UserName_txb_OnGotFocus(object sender, RoutedEventArgs e)
         {
@@ -83,8 +82,7 @@ namespace Desktop.Pages
 
                 if (loginUser != null)
                 {
-                    var wind = new MainEmptyWindow(UserNameTxb.Text);
-                    wind.Show();
+                    NavigationService?.Navigate(new MainEmptyPage(UserNameTxb.Text));
                 }
                 else
                 {
@@ -102,7 +100,7 @@ namespace Desktop.Pages
 
         private void BackToStartBtn_OnClick(object sender, RoutedEventArgs e)
         {
-            
+            NavigationService.GoBack();
         }
     }
 }

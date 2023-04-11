@@ -1,13 +1,12 @@
-﻿<Window x:Class="Desktop.Main"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:local="clr-namespace:Desktop"
-        mc:Ignorable="d"
-        Title="Main" Height="650" Width="800"
-        ResizeMode="NoResize">
-    <Window.Resources>
+﻿<Page x:Class="Desktop.Pages.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:Desktop.Pages"
+      mc:Ignorable="d"
+      Title="MainPage" Height="650" Width="800">
+    <Page.Resources>
         <FontFamily x:Key="Actor">/Fonts/#Actor</FontFamily>
         <DataTemplate x:Key="ListCategoryTemplate">
             <StackPanel>
@@ -47,9 +46,9 @@
                 </WrapPanel>
             </StackPanel>
         </DataTemplate>
-    </Window.Resources>
+    </Page.Resources>
     <Grid>
-        <Grid.RowDefinitions>
+         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition></RowDefinition>
@@ -174,4 +173,4 @@
                     Click="HistoryBtn_OnClick"></Button>
         </StackPanel>
     </Grid>
-</Window>
+</Page>

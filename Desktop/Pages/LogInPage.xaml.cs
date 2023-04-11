@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using Desktop.Properties;
 using Desktop.Repository;
 
 namespace Desktop.Pages
@@ -14,30 +15,27 @@ namespace Desktop.Pages
         }
         private void LoginBtn_Click(object sender, RoutedEventArgs e)
         {
-            var wind = new CreateTaskWindow(UserRepository.NameTransfer(LoginMailTxb.Text));
-            wind.Show();
-            //  if (Validator.EmailValid(LoginMailTxb) == null && 
-            //      Validator.PassValid(LoginPasswTxb) == null)
-            //  {
-            //      var loginUser = UserRepository.LogIn(LoginMailTxb.Text, LoginPasswTxb.Text);
-            //
-            //      if (loginUser != null)
-            //     {
-            //         var wind = new MainEmptyWindow(UserRepository.NameTransfer(LoginMailTxb.Text));
-            //         wind.Show();
-            //         this.Hide();
-            //     }
-            //     else
-            //     {
-            //         MessageBox.Show("Пользователя не существует");
-            //     }
-            //
-            // }
-            // else
-            // {
-            //     ErrorEmail.Content = Validator.EmailValid(LoginMailTxb);
-            //     ErrorPassword.Content = Validator.PassValid(LoginPasswTxb);
-            // }
+            //NavigationService?.Navigate()
+             if (Validator.EmailValid(LoginMailTxb) == null && 
+                 Validator.PassValid(LoginPasswTxb) == null)
+             {
+                 var loginUser = UserRepository.LogIn(LoginMailTxb.Text, LoginPasswTxb.Text);
+            
+                 if (loginUser != null)
+                {
+                    NavigationService?.Navigate(new MainEmptyPage(UserRepository.NameTransfer(LoginMailTxb.Text)));
+                }
+                else
+                {
+                    MessageBox.Show("Пользователя не существует");
+                }
+            
+            }
+            else
+            {
+                ErrorEmail.Content = Validator.EmailValid(LoginMailTxb);
+                ErrorPassword.Content = Validator.PassValid(LoginPasswTxb);
+            }
         }
 
         private void RegistrationBtn_Click(object sender, RoutedEventArgs e)

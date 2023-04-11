@@ -33,3 +33,9 @@ C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Main2.baml
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\MainWindow.baml
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Pages\LogInPage.baml
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Pages\RegistrationPage.baml
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Pages\CreateTaskPage.g.cs
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Pages\MainEmptyPage.g.cs
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Pages\MainPage.g.cs
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Pages\CreateTaskPage.baml
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Pages\MainEmptyPage.baml
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Pages\MainPage.baml

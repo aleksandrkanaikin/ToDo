@@ -1,18 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Windows;
-using System.Windows.Documents;
+using System.Windows.Controls;
 using System.Windows.Media;
 using Entities;
 
-namespace Desktop
+namespace Desktop.Pages
 {
-    public partial class CreateTaskWindow : Window
+    public partial class CreateTaskPage : Page
     {
         private List<SolidColorBrush> Color;
         private string userName;
-        public CreateTaskWindow(string name)
+        public CreateTaskPage(string name)
         {
             InitializeComponent();
             userName = name;
@@ -26,12 +25,9 @@ namespace Desktop
                 new SolidColorBrush(Colors.Orange)
             };
         }
-
         private void CancelButton_OnClick(object sender, RoutedEventArgs e)
         {
-            var window = new MainEmptyWindow(userName);
-            window.Show();
-            this.Close();
+            NavigationService?.GoBack();
         }
 
         private void CreateTaskBtn_OnClick(object sender, RoutedEventArgs e)
@@ -45,8 +41,7 @@ namespace Desktop
             };
             
             var wind = new Main(userName, newTask);
-            wind.Show();
-            this.Close();
+            NavigationService?.Navigate(new MainPage(userName, newTask));
         }
     }
 }
