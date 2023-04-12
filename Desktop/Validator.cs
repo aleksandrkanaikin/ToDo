@@ -1,7 +1,7 @@
 ﻿using System.Text.RegularExpressions;
 using System.Windows.Controls;
 
-namespace Desktop.Properties
+namespace Desktop
 {
     public static class Validator
     {

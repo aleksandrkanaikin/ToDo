@@ -100,7 +100,7 @@ namespace Desktop.Pages
 
         private void BackToStartBtn_OnClick(object sender, RoutedEventArgs e)
         {
-            NavigationService.GoBack();
+            NavigationService?.GoBack();
         }
     }
 }

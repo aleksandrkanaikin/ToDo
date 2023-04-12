@@ -3,6 +3,7 @@ using System.Windows.Controls;
 using System.Windows.Media;
 using Desktop.Properties;
 using Desktop.Repository;
+using Entities;
 
 namespace Desktop.Pages
 {

@@ -40,7 +40,6 @@ namespace Desktop.Pages
                 Name = TaskNameTxb.Text
             };
             
-            var wind = new Main(userName, newTask);
             NavigationService?.Navigate(new MainPage(userName, newTask));
         }
     }

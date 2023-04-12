@@ -21,7 +21,7 @@ namespace Desktop.Pages
             InitializeComponent();
             
             UserNameTxb.Text = name;
-
+            
             Color = new List<SolidColorBrush>
             {
                 new SolidColorBrush(Colors.Lime),
