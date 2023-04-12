@@ -29,6 +29,7 @@
                      Width="342" Height="61"
                      Style="{StaticResource TextBoxStyle}"
                      Margin="29,0,0,0"
+                     Foreground="Black"
                      TextWrapping="Wrap"
                      FontSize="18">
                 <TextBox.Resources>
@@ -48,6 +49,7 @@
                      Style="{StaticResource TextBoxStyle}"
                      Margin="29,0,0,0" 
                      TextWrapping="Wrap"
+                     Foreground="Black"
                      FontSize="18">
                 <TextBox.Resources>
                     <Style TargetType="Border">
@@ -66,6 +68,7 @@
                      Style="{StaticResource TextBoxStyle}"
                      Margin="29,0,0,0" 
                      TextWrapping="Wrap"
+                     Foreground="Black"
                      FontSize="18">
                 <TextBox.Resources>
                     <Style TargetType="Border">

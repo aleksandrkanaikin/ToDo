@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -39,18 +40,24 @@ namespace Desktop.Pages
                 new TaskCategoryModel("Учеба", Color[random.Next(Color.Count)]),
                 new TaskCategoryModel("Отдых", Color[random.Next(Color.Count)])
             };
-            
-            for (var i = 0; i < Categories.Count; i++)
-            {
-                if (newTask.Category.CategoryName != Categories[i].CategoryName)
-                {
-                    Categories.Add(newTask.Category);
-                }
-            }
+
+
             if (Categories.Contains(newTask.Category) == false)
             {
                 Categories.Add(newTask.Category);
             }
+            
+            // if (Categories.Contains(newTask.Category) == false)
+            // {
+            //     Categories.Add(newTask.Category);
+            // }
+            // foreach (var category in Categories)
+            // {
+            //     if (category.CategoryName != newTask.Category.CategoryName)
+            //     {
+            //         Categories.Add(newTask.Category);
+            //     }
+            // }
             CateogryList.ItemsSource = Categories;
 
             Tasks = new ObservableCollection<TaskModel>
