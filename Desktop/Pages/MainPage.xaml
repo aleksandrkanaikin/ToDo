@@ -132,7 +132,7 @@
                            Text="{Binding Path=Tasks.description}"
                            FontFamily="{StaticResource Actor}"></TextBlock>
                 <Button Name="TaskComplitedBtn"
-                        VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                        VerticalAlignment="Bottom" HorizontalAlignment="Stretch"
                         Margin="10,50,10,0" 
                         Content="Готово" Style="{StaticResource ButtonStyle}"
                         Click="TaskComplitedBtn_OnClick">
@@ -143,7 +143,7 @@
                     </Button.Resources>
                 </Button>
                 <Button Name="DeleteTaskBtn" 
-                        VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                        VerticalAlignment="Bottom" HorizontalAlignment="Stretch"
                         Margin="10,10,10,0" 
                         Content="Удалить" Style="{StaticResource ButtonStyle}"
                         Click="DeleteTaskBtn_OnClick">
