@@ -39,3 +39,5 @@ C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Pages\MainPage.g.cs
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Pages\CreateTaskPage.baml
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Pages\MainEmptyPage.baml
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Pages\MainPage.baml
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Dictionaries\TextBlockDictionary.baml
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Dictionaries\TextBoxDictionary.baml

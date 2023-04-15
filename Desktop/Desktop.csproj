@@ -84,7 +84,9 @@
         <Compile Include="Repository\UserRepository.cs" />
         <Compile Include="Validator.cs" />
         <Page Include="CreateTaskWindow.xaml" />
-        <Page Include="Dictionaries\ButtonDictionary.xaml" />
+        <Resource Include="Dictionaries\ButtonDictionary.xaml" />
+        <Page Include="Dictionaries\TextBlockDictionary.xaml" />
+        <Page Include="Dictionaries\TextBoxDictionary.xaml" />
         <Page Include="LogInWindow.xaml">
             <Generator>MSBuild:Compile</Generator>
             <SubType>Designer</SubType>
