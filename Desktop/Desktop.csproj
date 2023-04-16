@@ -75,6 +75,9 @@
             <DependentUpon>App.xaml</DependentUpon>
             <SubType>Code</SubType>
         </Compile>
+        <Page Include="Dictionaries\ButtonDictionary.xaml" />
+        <Page Include="Dictionaries\TextBlockDictionary.xaml" />
+        <Page Include="Dictionaries\TextBoxDictionary.xaml" />
         <Page Include="Main2.xaml" />
         <Page Include="Pages\CreateTaskPage.xaml" />
         <Page Include="Pages\LogInPage.xaml" />
