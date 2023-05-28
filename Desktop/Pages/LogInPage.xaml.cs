@@ -1,4 +1,6 @@
-﻿using System.Windows;
+﻿using System;
+using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using Desktop.Properties;
@@ -9,34 +11,52 @@ namespace Desktop.Pages
 {
     public partial class LogInPage : Page
     {
+        private Repository.Repository rep;
+        
         public LogInPage()
         {
+            this.rep = new Repository.Repository();
             InitializeComponent();
             ShowsNavigationUI = false;
+            
         }
-        private void LoginBtn_Click(object sender, RoutedEventArgs e)
+        private async void LoginBtn_Click(object sender, RoutedEventArgs e)
         {
-            //NavigationService?.Navigate()
-             if (Validator.EmailValid(LoginMailTxb) == null && 
-                 Validator.PassValid(LoginPasswTxb) == null)
-             {
-                 var loginUser = UserRepository.LogIn(LoginMailTxb.Text, LoginPasswTxb.Text);
-            
-                 if (loginUser != null)
-                {
-                    NavigationService?.Navigate(new MainEmptyPage(UserRepository.NameTransfer(LoginMailTxb.Text)));
-                }
-                else
-                {
-                    MessageBox.Show("Пользователя не существует");
-                }
-            
-            }
-            else
+            LoginUser loginUser = new LoginUser {Email = LoginMailTxb.Text, Password = LoginPasswTxb.Text};
+            try
             {
-                ErrorEmail.Content = Validator.EmailValid(LoginMailTxb);
-                ErrorPassword.Content = Validator.PassValid(LoginPasswTxb);
+                await rep.Login(loginUser);
+
             }
+            catch (Exception exception)
+            {
+                Console.WriteLine(exception);
+                throw;
+            }
+           // await rep.Login(loginUser);
+            // var statuscode = await rep.GetSuccessCode(loginUser);
+            // MessageBox.Show($"{statuscode}");
+
+            //NavigationService?.Navigate(new MainEmptyPage("Alex"));
+            // if (Validator.EmailValid(LoginMailTxb) == null && 
+            //     Validator.PassValid(LoginPasswTxb) == null)
+            // {
+            //     var loginUser = UserRepository.LogIn(LoginMailTxb.Text, LoginPasswTxb.Text);
+            //
+            //     if (loginUser != null) 
+            //     {
+            //          NavigationService?.Navigate(new MainEmptyPage(UserRepository.NameTransfer(LoginMailTxb.Text))); 
+            //     }
+            //     else 
+            //     {
+            //          MessageBox.Show("Пользователя не существует"); 
+            //     } 
+            // }
+            // else
+            // { 
+            //     ErrorEmail.Content = Validator.EmailValid(LoginMailTxb);
+            //     ErrorPassword.Content = Validator.PassValid(LoginPasswTxb);
+            // }
         }
 
         private void RegistrationBtn_Click(object sender, RoutedEventArgs e)

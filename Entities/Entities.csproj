@@ -39,9 +39,11 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="LoginUser.cs" />
         <Compile Include="Properties\Annotations.cs" />
         <Compile Include="TaskCategoryModel.cs" />
         <Compile Include="TaskModel.cs" />
+        <Compile Include="TokenModel.cs" />
         <Compile Include="UserModel.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>

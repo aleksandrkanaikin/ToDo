@@ -11,11 +11,11 @@ namespace Entities
         private string name;
         private string description;
         private string date;
-        private int id;
+        private Guid id;
         private bool check;
         private TaskCategoryModel category;
 
-        public int Id
+        public Guid Id
         {
             get { return id;}
             set

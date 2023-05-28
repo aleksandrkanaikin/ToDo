@@ -5,6 +5,7 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using Entities;
 
 namespace Desktop.Pages
@@ -17,12 +18,16 @@ namespace Desktop.Pages
         private ObservableCollection<TaskModel> ComplitedTasks;
         private ObservableCollection<TaskModel> SelectedCategory;
         
-        public MainPage(string name, TaskModel newTask)
+        public MainPage(string name)
         {
             InitializeComponent();
             
             UserNameTxb.Text = name;
-            
+            //DoubleAnimation doubleAnimation = new DoubleAnimation();
+            // doubleAnimation.From = TaskFullDescription.ActualWidth;
+            // doubleAnimation.To = 150;
+            // doubleAnimation.Duration = TimeSpan.FromSeconds(2);
+            // TaskFullDescription.BeginAnimation(ActualWidthProperty, doubleAnimation);
             Color = new List<SolidColorBrush>
             {
                 new SolidColorBrush(Colors.Lime),
@@ -33,7 +38,7 @@ namespace Desktop.Pages
             };
             Random random = new Random();
             
-            Categories= new ObservableCollection<TaskCategoryModel> 
+            Categories = new ObservableCollection<TaskCategoryModel> 
             {
                 new TaskCategoryModel("Дом", Color[random.Next(Color.Count)]),
                 new TaskCategoryModel("Работа", Color[random.Next(Color.Count)]),
@@ -41,12 +46,10 @@ namespace Desktop.Pages
                 new TaskCategoryModel("Отдых", Color[random.Next(Color.Count)])
             };
 
-
-            if (Categories.Contains(newTask.Category) == false)
-            {
-                Categories.Add(newTask.Category);
-            }
-            
+            // if (Categories.Contains(newTask.Category) == false)
+            // {
+            //     Categories.Add(newTask.Category);
+            // }
             // if (Categories.Contains(newTask.Category) == false)
             // {
             //     Categories.Add(newTask.Category);
@@ -59,21 +62,20 @@ namespace Desktop.Pages
             //     }
             // }
             CateogryList.ItemsSource = Categories;
-
-            Tasks = new ObservableCollection<TaskModel>
-            {
-                new TaskModel{Id = 1, Name = "Go fishing with Stephen", Category = Categories[0], 
-                    Description = "Lorem ipsum dolor sit amet,!consectetur adipiscing.", Date = "16.02.2023", Check = true},
-                new TaskModel{Id = 1, Name = "Go fishing with Stephen", Category = Categories[2], 
-                    Description = "Lorem ipsum dolor sit amet,consectetur adipiscing.", Date = "16.02.2023", Check = false},
-                new TaskModel{Id = 1, Name = "Go fishing with Stephen", Category = Categories[1], 
-                    Description = "Lorem ipsum dolor sit amet,consectetur adipiscing.", Date = "16.02.2023", Check = false},
-                new TaskModel{Id = 1, Name = "Go fishing with Stephen", Category = Categories[3], 
-                    Description = "Lorem ipsum dolor sit amet,consectetur adipiscing.", Date = "16.02.2023", Check = false},
-                new TaskModel{Id = 1, Name = "Go fishing with Stephen", Category = Categories[2], 
-                    Description = "Lorem ipsum dolor sit amet,consectetur adipiscing.", Date = "16.02.2023", Check = false}
-            };
-            Tasks.Add(newTask);
+            // Tasks = new ObservableCollection<TaskModel>
+            // {
+            //     new TaskModel{Id = 1, Name = "Go fishing with Stephen", Category = Categories[0], 
+            //         Description = "Lorem ipsum dolor sit amet,!consectetur adipiscing.", Date = "16.02.2023", Check = true},
+            //     new TaskModel{Id = 1, Name = "Go fishing with Stephen", Category = Categories[2], 
+            //         Description = "Lorem ipsum dolor sit amet,consectetur adipiscing.", Date = "16.02.2023", Check = false},
+            //     new TaskModel{Id = 1, Name = "Go fishing with Stephen", Category = Categories[1], 
+            //         Description = "Lorem ipsum dolor sit amet,consectetur adipiscing.", Date = "16.02.2023", Check = false},
+            //     new TaskModel{Id = 1, Name = "Go fishing with Stephen", Category = Categories[3], 
+            //         Description = "Lorem ipsum dolor sit amet,consectetur adipiscing.", Date = "16.02.2023", Check = false},
+            //     new TaskModel{Id = 1, Name = "Go fishing with Stephen", Category = Categories[2], 
+            //         Description = "Lorem ipsum dolor sit amet,consectetur adipiscing.", Date = "16.02.2023", Check = false}
+            // };
+            // Tasks.Add(newTask);
             TaskList.ItemsSource = Tasks;
         }
         
@@ -119,8 +121,16 @@ namespace Desktop.Pages
         private void TaskComplitedBtn_OnClick(object sender, RoutedEventArgs e)
         {
             TaskModel task = (TaskModel) TaskList.SelectedItem;
-            task.Check = true;
-            
+            if (task.Check == false)
+            {
+                task.Check = true;
+                TaskComplitedBtn.Content = "Недоделано";
+            }
+            else if (task.Check == true)
+            {
+                task.Check = false;
+                TaskComplitedBtn.Content = "Готово";
+            }
         }
 
         private void DeleteTaskBtn_OnClick(object sender, RoutedEventArgs e)

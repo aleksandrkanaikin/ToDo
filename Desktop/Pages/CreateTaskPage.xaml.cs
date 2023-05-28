@@ -32,15 +32,16 @@ namespace Desktop.Pages
 
         private void CreateTaskBtn_OnClick(object sender, RoutedEventArgs e)
         {
-            Random random = new Random();
-            TaskModel newTask = new TaskModel
-            {
-                Category = new TaskCategoryModel(TaskCategoryTxb.Text, Color[random.Next(Color.Count)]), Check = false,
-                Date = TaskDate.Text, Description = TaskDescriptionTxb.Text, Id = random.Next(1, 10),
-                Name = TaskNameTxb.Text
-            };
+            // Random random = new Random();
+            // TaskModel newTask = new TaskModel
+            // {
+            //     Category = new TaskCategoryModel(TaskCategoryTxb.Text , Color[random.Next(Color.Count)]), Check = false,
+            //     Date = TaskDate.Text, Description = TaskDescriptionTxb.Text, Id = 2,
+            //     Name = TaskNameTxb.Text
+            // };
             
-            NavigationService?.Navigate(new MainPage(userName, newTask));
+           // NavigationService?.Navigate(new MainPage(userName, newTask));
+           NavigationService?.Navigate(new MainPage(userName));
         }
     }
 }
