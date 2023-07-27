@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -11,29 +12,50 @@ namespace Desktop.Pages
 {
     public partial class LogInPage : Page
     {
-        private Repository.Repository rep;
+        private APIRepository rep;
         
         public LogInPage()
         {
-            this.rep = new Repository.Repository();
+            this.rep = new APIRepository();
             InitializeComponent();
             ShowsNavigationUI = false;
             
         }
+
+        private void RegistrationBtn_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService?.Navigate(new RegistrationPage());
+        }
+        
         private async void LoginBtn_Click(object sender, RoutedEventArgs e)
         {
-            LoginUser loginUser = new LoginUser {Email = LoginMailTxb.Text, Password = LoginPasswTxb.Text};
+            LoginUser loginApiUser = new LoginUser {Email = LoginMailTxb.Text, Password = LoginPasswTxb.Text};
             try
             {
-                await rep.Login(loginUser);
+                if (await rep.Login(loginApiUser) == null)
+                {
+                    MessageBox.Show("Вы успешно вошли");
+                    if (await rep.GetTodosAsync() != null)
+                    {
+                        NavigationService?.Navigate(new MainPage("Alex"));
+                    }
+                    else
+                    {
+                        NavigationService?.Navigate(new MainEmptyPage("Alex"));
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Пользователь не зарегестрирован");
 
+                }
             }
             catch (Exception exception)
             {
-                Console.WriteLine(exception);
+                MessageBox.Show(exception.Message);
                 throw;
             }
-           // await rep.Login(loginUser);
+            // await rep.Login(loginUser);
             // var statuscode = await rep.GetSuccessCode(loginUser);
             // MessageBox.Show($"{statuscode}");
 
@@ -59,13 +81,8 @@ namespace Desktop.Pages
             // }
         }
 
-        private void RegistrationBtn_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService?.Navigate(new RegistrationPage());
-        }
-
         #region Textboxes
-        
+
         private void LoginMailTxb_OnGotFocus(object sender, RoutedEventArgs e)
         {
             if (LoginMailTxb.Text != "Введите почту") return;

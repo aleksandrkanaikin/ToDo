@@ -6,6 +6,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
+using Desktop.Repository;
 using Entities;
 
 namespace Desktop.Pages
@@ -14,15 +15,18 @@ namespace Desktop.Pages
     {
         private List<SolidColorBrush> Color;
         private ObservableCollection<TaskCategoryModel> Categories;
-        private ObservableCollection<TaskModel> Tasks;
+        private List<TaskModel> Tasks;
         private ObservableCollection<TaskModel> ComplitedTasks;
         private ObservableCollection<TaskModel> SelectedCategory;
-        
+
+        private APIRepository rep;
+
         public MainPage(string name)
         {
             InitializeComponent();
             
             UserNameTxb.Text = name;
+            rep = new APIRepository();
             //DoubleAnimation doubleAnimation = new DoubleAnimation();
             // doubleAnimation.From = TaskFullDescription.ActualWidth;
             // doubleAnimation.To = 150;
@@ -62,6 +66,8 @@ namespace Desktop.Pages
             //     }
             // }
             CateogryList.ItemsSource = Categories;
+            
+            eferv();
             // Tasks = new ObservableCollection<TaskModel>
             // {
             //     new TaskModel{Id = 1, Name = "Go fishing with Stephen", Category = Categories[0], 
@@ -78,31 +84,38 @@ namespace Desktop.Pages
             // Tasks.Add(newTask);
             TaskList.ItemsSource = Tasks;
         }
-        
+
+
+        private async void eferv()
+        {
+            Tasks = await rep.GetTodosAsync();
+        }
+
+
         private void CateogryList_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            SelectedCategory = new ObservableCollection<TaskModel>();
-            if (CateogryList.SelectedItem is TaskCategoryModel category)
-            {
-                for (int i = 0; i < Tasks.Count; i++)
-                {
-                    if (category == Tasks[i].Category)
-                    {
-                        SelectedCategory.Add(Tasks[i]);
-                    }
-                }
-            }
-            TaskList.ItemsSource = SelectedCategory;
+            // SelectedCategory = new ObservableCollection<TaskModel>();
+            // if (CateogryList.SelectedItem is TaskCategoryModel category)
+            // {
+            //     for (int i = 0; i < Tasks.Count; i++)
+            //     {
+            //         if (category == Tasks[i].Category)
+            //         {
+            //             SelectedCategory.Add(Tasks[i]);
+            //         }
+            //     }
+            // }
+            // TaskList.ItemsSource = SelectedCategory;
         }
 
         private void TaskList_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (TaskList.SelectedItem is TaskModel task)
             {
-                if(task.Check == false)
+                if(task.IsComplited == false)
                 {
-                    TaskNameTxb.Text = task.Name;
-                    TaskDateTxb.Text = task.Date;
+                    TaskNameTxb.Text = task.Title;
+                    TaskDateTxb.Text = task.Date.ToString();
                     TaskDescriptionTxb.Text = task.Description;
                     TaskComplitedBtn.Visibility = Visibility.Visible;
                     DeleteTaskBtn.Visibility = Visibility.Visible;
@@ -121,14 +134,14 @@ namespace Desktop.Pages
         private void TaskComplitedBtn_OnClick(object sender, RoutedEventArgs e)
         {
             TaskModel task = (TaskModel) TaskList.SelectedItem;
-            if (task.Check == false)
+            if (task.IsComplited == false)
             {
-                task.Check = true;
+                task.IsComplited = true;
                 TaskComplitedBtn.Content = "Недоделано";
             }
-            else if (task.Check == true)
+            else if (task.IsComplited == true)
             {
-                task.Check = false;
+                task.IsComplited = false;
                 TaskComplitedBtn.Content = "Готово";
             }
         }
@@ -149,7 +162,7 @@ namespace Desktop.Pages
             ComplitedTasks = new ObservableCollection<TaskModel>();
             foreach (var task in Tasks)
             {
-                if (task.Check == true)
+                if (task.IsComplited == true)
                 {
                     ComplitedTasks.Add(task);
                 }

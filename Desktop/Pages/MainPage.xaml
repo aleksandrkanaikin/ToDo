@@ -31,10 +31,10 @@
                           VerticalAlignment="Center"
                           Margin="22" BorderThickness="3"
                           BorderBrush="#6074F9" 
-                          IsChecked="{Binding Path=Check}"></CheckBox>
+                          IsChecked="{Binding Path=IsComplited}"></CheckBox>
                 <WrapPanel Orientation="Vertical" HorizontalAlignment="Stretch">
                     <TextBlock Width="250" HorizontalAlignment="Left"
-                               Text="{Binding Path=Name}"
+                               Text="{Binding Path=Title}"
                                Padding="0,10,0,0"
                                FontSize="16" 
                                FontFamily="{StaticResource Actor}"
@@ -42,7 +42,7 @@
                     <TextBlock VerticalAlignment="Bottom" Foreground="#9B9B9B"
                                FontSize="16"
                                FontFamily="{StaticResource Actor}"
-                               Text="{Binding Path=Date}"></TextBlock>
+                               Text="{Binding Path = Date}"></TextBlock>
                 </WrapPanel>
             </StackPanel>
         </DataTemplate>
@@ -129,7 +129,7 @@
                            FontFamily="{StaticResource Actor}"></TextBlock>
                 <TextBlock Name="TaskDescriptionTxb" Margin="10,25,0,0"
                            FontSize="16" TextWrapping="Wrap"
-                           Text="{Binding Path=Tasks.description}"
+                           Text="{Binding Path=Tasks.Description}"
                            FontFamily="{StaticResource Actor}"></TextBlock>
                 <Button Name="TaskComplitedBtn"
                         VerticalAlignment="Bottom" HorizontalAlignment="Stretch"

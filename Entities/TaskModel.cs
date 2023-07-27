@@ -10,10 +10,10 @@ namespace Entities
     {
         private string name;
         private string description;
-        private string date;
+        private int date;
         private Guid id;
         private bool check;
-        private TaskCategoryModel category;
+        private string category;
 
         public Guid Id
         {
@@ -24,7 +24,7 @@ namespace Entities
                 OnPropertyChanged();
             }
         }
-        public string Name
+        public string Title
         {
             get { return name;}
             set
@@ -44,7 +44,7 @@ namespace Entities
             }
         }
 
-        public bool Check
+        public bool IsComplited
         {
             get { return check;}
             set
@@ -54,7 +54,7 @@ namespace Entities
             }
         }
 
-        public string Date
+        public int Date
         {
             get { return date;}
             set
@@ -64,7 +64,7 @@ namespace Entities
             }
         }
 
-        public TaskCategoryModel Category
+        public string Category
         {
             get { return category;}
             set
