@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("fonts/actor.ttf")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("userbase/model1.context.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("userbase/model1.tt")]
 
 

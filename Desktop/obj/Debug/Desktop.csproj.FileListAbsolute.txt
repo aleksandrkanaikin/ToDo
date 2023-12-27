@@ -1,61 +1,259 @@
+C:\Users\Я\source\repos\Desktop\Desktop\bin\Debug\Desktop.exe.config
+C:\Users\Я\source\repos\Desktop\Desktop\bin\Debug\Desktop.exe
+C:\Users\Я\source\repos\Desktop\Desktop\bin\Debug\Desktop.pdb
+C:\Users\Я\source\repos\Desktop\Desktop\obj\Debug\MainWindow.g.cs
+C:\Users\Я\source\repos\Desktop\Desktop\obj\Debug\App.g.cs
+C:\Users\Я\source\repos\Desktop\Desktop\obj\Debug\Desktop_MarkupCompile.cache
+C:\Users\Я\source\repos\Desktop\Desktop\obj\Debug\Desktop_MarkupCompile.lref
+C:\Users\Я\source\repos\Desktop\Desktop\obj\Debug\MainWindow.baml
+C:\Users\Я\source\repos\Desktop\Desktop\obj\Debug\Desktop.g.resources
+C:\Users\Я\source\repos\Desktop\Desktop\obj\Debug\Desktop.Properties.Resources.resources
+C:\Users\Я\source\repos\Desktop\Desktop\obj\Debug\Desktop.csproj.GenerateResource.cache
+C:\Users\Я\source\repos\Desktop\Desktop\obj\Debug\Desktop.csproj.CoreCompileInputs.cache
+C:\Users\Я\source\repos\Desktop\Desktop\obj\Debug\Desktop.exe
+C:\Users\Я\source\repos\Desktop\Desktop\obj\Debug\Desktop.pdb
+C:\Users\Я\source\repos\Desktop\Desktop\obj\Debug\Window1.g.cs
+C:\Users\Я\source\repos\Desktop\Desktop\obj\Debug\Window1.baml
+C:\Users\Я\source\repos\Desktop\Desktop\bin\Debug\EntityFramework.dll
+C:\Users\Я\source\repos\Desktop\Desktop\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Я\source\repos\Desktop\Desktop\bin\Debug\EntityFramework.xml
+C:\Users\Я\source\repos\Desktop\Desktop\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Я\source\repos\Desktop\Desktop\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Я\source\repos\Desktop\Desktop\obj\Debug\Desktop.csproj.CopyComplete
+C:\Users\Я\source\repos\Desktop\Desktop\obj\Debug\Desktop.csproj.AssemblyReference.cache
+C:\Users\Я\source\repos\Desktop\Desktop\obj\Debug\Window2.g.cs
+C:\Users\Я\source\repos\Desktop\Desktop\obj\Debug\Window2.baml
+C:\Users\Я\source\repos\Desktop\Desktop\obj\Debug\Window3.g.cs
+C:\Users\Я\source\repos\Desktop\Desktop\obj\Debug\Window3.baml
+C:\Users\Я\source\repos\Desktop\Desktop\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Я\source\repos\Desktop\Desktop\obj\Debug\Window4.g.cs
+C:\Users\Я\source\repos\Desktop\Desktop\obj\Debug\Window4.baml
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\bin\Debug\Desktop.exe.config
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\bin\Debug\Desktop.exe
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\bin\Debug\Desktop.pdb
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\bin\Debug\EntityFramework.dll
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\bin\Debug\EntityFramework.SqlServer.dll
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\bin\Debug\EntityFramework.xml
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\bin\Debug\EntityFramework.SqlServer.xml
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\bin\Debug\ru\EntityFramework.resources.dll
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\obj\Debug\Desktop.csproj.AssemblyReference.cache
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\obj\Debug\Desktop.csproj.SuggestedBindingRedirects.cache
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\obj\Debug\App.g.cs
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\obj\Debug\Desktop_MarkupCompile.cache
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\obj\Debug\Desktop_MarkupCompile.lref
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\obj\Debug\Desktop.g.resources
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\obj\Debug\Desktop.Properties.Resources.resources
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\obj\Debug\Desktop.csproj.GenerateResource.cache
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\obj\Debug\Desktop.csproj.CoreCompileInputs.cache
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\obj\Debug\Desktop.csproj.CopyComplete
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\obj\Debug\Desktop.exe
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\obj\Debug\Desktop.pdb
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\obj\Debug\App.baml
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\obj\Debug\Window\LoginWindow.g.cs
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\obj\Debug\Window\RegisterWindow.g.cs
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\obj\Debug\Window\LoginWindow.baml
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\obj\Debug\Window\RegisterWindow.baml
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\obj\Debug\Window\MainEmptyWindow.g.cs
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\obj\Debug\Window\CreateWindow.g.cs
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\obj\Debug\Window\MainWindow.g.cs
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\obj\Debug\Window\MainEmptyWindow.baml
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\obj\Debug\Window\CreateWindow.baml
+D:\Пользователи\Руслан\Рабочий стол\Denis\Desktop\obj\Debug\Window\MainWindow.baml
+C:\Users\USER\Desktop\Denis\Desktop\bin\Debug\Desktop.exe.config
+C:\Users\USER\Desktop\Denis\Desktop\bin\Debug\Desktop.exe
+C:\Users\USER\Desktop\Denis\Desktop\bin\Debug\Desktop.pdb
+C:\Users\USER\Desktop\Denis\Desktop\bin\Debug\EntityFramework.dll
+C:\Users\USER\Desktop\Denis\Desktop\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\USER\Desktop\Denis\Desktop\bin\Debug\EntityFramework.xml
+C:\Users\USER\Desktop\Denis\Desktop\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\USER\Desktop\Denis\Desktop\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\USER\Desktop\Denis\Desktop\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\USER\Desktop\Denis\Desktop\obj\Debug\Desktop.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\Denis\Desktop\obj\Debug\Desktop.csproj.SuggestedBindingRedirects.cache
+C:\Users\USER\Desktop\Denis\Desktop\obj\Debug\Window\LoginWindow.g.cs
+C:\Users\USER\Desktop\Denis\Desktop\obj\Debug\Window\RegisterWindow.g.cs
+C:\Users\USER\Desktop\Denis\Desktop\obj\Debug\Window\MainEmptyWindow.g.cs
+C:\Users\USER\Desktop\Denis\Desktop\obj\Debug\Window\CreateWindow.g.cs
+C:\Users\USER\Desktop\Denis\Desktop\obj\Debug\Window\MainWindow.g.cs
+C:\Users\USER\Desktop\Denis\Desktop\obj\Debug\App.g.cs
+C:\Users\USER\Desktop\Denis\Desktop\obj\Debug\Desktop_MarkupCompile.cache
+C:\Users\USER\Desktop\Denis\Desktop\obj\Debug\Desktop_MarkupCompile.lref
+C:\Users\USER\Desktop\Denis\Desktop\obj\Debug\App.baml
+C:\Users\USER\Desktop\Denis\Desktop\obj\Debug\Window\LoginWindow.baml
+C:\Users\USER\Desktop\Denis\Desktop\obj\Debug\Window\RegisterWindow.baml
+C:\Users\USER\Desktop\Denis\Desktop\obj\Debug\Window\MainEmptyWindow.baml
+C:\Users\USER\Desktop\Denis\Desktop\obj\Debug\Window\CreateWindow.baml
+C:\Users\USER\Desktop\Denis\Desktop\obj\Debug\Window\MainWindow.baml
+C:\Users\USER\Desktop\Denis\Desktop\obj\Debug\Desktop.g.resources
+C:\Users\USER\Desktop\Denis\Desktop\obj\Debug\Desktop.Properties.Resources.resources
+C:\Users\USER\Desktop\Denis\Desktop\obj\Debug\Desktop.csproj.GenerateResource.cache
+C:\Users\USER\Desktop\Denis\Desktop\obj\Debug\Desktop.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\Denis\Desktop\obj\Debug\Desktop.csproj.CopyComplete
+C:\Users\USER\Desktop\Denis\Desktop\obj\Debug\Desktop.exe
+C:\Users\USER\Desktop\Denis\Desktop\obj\Debug\Desktop.pdb
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\bin\Debug\Desktop.exe.config
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\bin\Debug\Desktop.exe
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\bin\Debug\Desktop.pdb
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\bin\Debug\EntityFramework.dll
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\bin\Debug\EntityFramework.xml
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\obj\Debug\Desktop.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\obj\Debug\Desktop.csproj.SuggestedBindingRedirects.cache
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\obj\Debug\Window\LoginWindow.g.cs
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\obj\Debug\Window\RegisterWindow.g.cs
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\obj\Debug\Window\MainEmptyWindow.g.cs
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\obj\Debug\Window\CreateWindow.g.cs
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\obj\Debug\Window\MainWindow.g.cs
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\obj\Debug\App.g.cs
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\obj\Debug\Desktop_MarkupCompile.cache
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\obj\Debug\Desktop_MarkupCompile.lref
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\obj\Debug\App.baml
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\obj\Debug\Window\LoginWindow.baml
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\obj\Debug\Window\RegisterWindow.baml
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\obj\Debug\Window\MainEmptyWindow.baml
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\obj\Debug\Window\CreateWindow.baml
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\obj\Debug\Window\MainWindow.baml
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\obj\Debug\Desktop.g.resources
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\obj\Debug\Desktop.Properties.Resources.resources
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\obj\Debug\Desktop.csproj.GenerateResource.cache
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\obj\Debug\Desktop.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\obj\Debug\Desktop.csproj.CopyComplete
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\obj\Debug\Desktop.exe
+C:\Users\USER\Desktop\WPF-Lab 5\Desktop\obj\Debug\Desktop.pdb
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\bin\Debug\Desktop.exe.config
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\bin\Debug\Desktop.exe
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\bin\Debug\Desktop.pdb
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\bin\Debug\EntityFramework.xml
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\obj\Debug\Desktop.csproj.AssemblyReference.cache
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\obj\Debug\Desktop.csproj.SuggestedBindingRedirects.cache
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\obj\Debug\TodoDictionary.baml
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\obj\Debug\Window\LoginWindow.g.cs
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\obj\Debug\Window\RegisterWindow.g.cs
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\obj\Debug\Window\MainEmptyWindow.g.cs
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\obj\Debug\Window\CreateWindow.g.cs
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\obj\Debug\Window\MainWindow.g.cs
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\obj\Debug\App.g.cs
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\obj\Debug\Desktop_MarkupCompile.cache
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\obj\Debug\Desktop_MarkupCompile.lref
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\obj\Debug\App.baml
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\obj\Debug\Window\LoginWindow.baml
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\obj\Debug\Window\RegisterWindow.baml
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\obj\Debug\Window\MainEmptyWindow.baml
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\obj\Debug\Window\CreateWindow.baml
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\obj\Debug\Window\MainWindow.baml
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\obj\Debug\Desktop.g.resources
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\obj\Debug\Desktop.Properties.Resources.resources
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\obj\Debug\Desktop.csproj.GenerateResource.cache
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\obj\Debug\Desktop.csproj.CoreCompileInputs.cache
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\obj\Debug\Desktop.csproj.CopyComplete
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\obj\Debug\Desktop.exe
+C:\Users\denme\OneDrive\Рабочий стол\WPF-lab5\Desktop\obj\Debug\Desktop.pdb
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\obj\Debug\Desktop.csproj.AssemblyReference.cache
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\obj\Debug\Desktop.csproj.SuggestedBindingRedirects.cache
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\obj\Debug\TodoDictionary.baml
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\obj\Debug\View\LoginPage.g.cs
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\obj\Debug\App.g.cs
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\obj\Debug\Desktop_MarkupCompile.cache
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\obj\Debug\Desktop_MarkupCompile.lref
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\obj\Debug\Desktop.exe
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\obj\Debug\Desktop.pdb
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\obj\Debug\View\CreatePage.g.cs
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\obj\Debug\View\MainEmptyPage.g.cs
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\obj\Debug\View\MainPage.g.cs
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\obj\Debug\View\RegisterPage.g.cs
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\obj\Debug\View\MainWindow1.g.cs
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\bin\Debug\Desktop.exe.config
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\bin\Debug\Desktop.exe
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\bin\Debug\Desktop.pdb
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\bin\Debug\EntityFramework.xml
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\obj\Debug\App.baml
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\obj\Debug\View\CreatePage.baml
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\obj\Debug\View\LoginPage.baml
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\obj\Debug\View\MainEmptyPage.baml
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\obj\Debug\View\MainPage.baml
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\obj\Debug\View\RegisterPage.baml
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\obj\Debug\View\MainWindow1.baml
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\obj\Debug\Desktop.g.resources
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\obj\Debug\Desktop.Properties.Resources.resources
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\obj\Debug\Desktop.csproj.GenerateResource.cache
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\obj\Debug\Desktop.csproj.CoreCompileInputs.cache
+C:\Users\denme\OneDrive\Рабочий стол\wpf-lab6\Desktop\obj\Debug\Desktop.csproj.CopyComplete
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\bin\Debug\Desktop.exe.config
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\bin\Debug\Desktop.exe
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\bin\Debug\Desktop.pdb
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\bin\Debug\EntityFramework.xml
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\obj\Debug\Desktop.csproj.AssemblyReference.cache
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\obj\Debug\TodoDictionary.baml
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\obj\Debug\View\CreatePage.g.cs
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\obj\Debug\View\LoginPage.g.cs
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\obj\Debug\View\MainEmptyPage.g.cs
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\obj\Debug\View\MainPage.g.cs
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\obj\Debug\View\RegisterPage.g.cs
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\obj\Debug\View\MainWindow1.g.cs
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\obj\Debug\App.g.cs
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\obj\Debug\Desktop_MarkupCompile.cache
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\obj\Debug\Desktop_MarkupCompile.lref
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\obj\Debug\App.baml
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\obj\Debug\View\CreatePage.baml
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\obj\Debug\View\LoginPage.baml
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\obj\Debug\View\MainEmptyPage.baml
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\obj\Debug\View\MainPage.baml
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\obj\Debug\View\RegisterPage.baml
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\obj\Debug\View\MainWindow1.baml
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\obj\Debug\Desktop.g.resources
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\obj\Debug\Desktop.Properties.Resources.resources
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\obj\Debug\Desktop.csproj.GenerateResource.cache
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\obj\Debug\Desktop.csproj.CoreCompileInputs.cache
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\obj\Debug\Desktop.csproj.CopyComplete
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\obj\Debug\Desktop.exe
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\obj\Debug\Desktop.pdb
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ladon\Desktop\WPF-lab8\Desktop\bin\Debug\Newtonsoft.Json.xml
 C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\Desktop.exe.config
 C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\Desktop.exe
 C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\Desktop.pdb
+C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\EntityFramework.xml
+C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Desktop.csproj.AssemblyReference.cache
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Desktop.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\TodoDictionary.baml
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\View\CreatePage.g.cs
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\View\LoginPage.g.cs
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\View\MainEmptyPage.g.cs
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\View\MainPage.g.cs
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\View\RegisterPage.g.cs
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\View\MainWindow1.g.cs
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\App.g.cs
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Desktop_MarkupCompile.cache
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Desktop_MarkupCompile.lref
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\App.baml
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\View\CreatePage.baml
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\View\LoginPage.baml
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\View\MainEmptyPage.baml
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\View\MainPage.baml
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\View\RegisterPage.baml
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\View\MainWindow1.baml
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Desktop.g.resources
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Desktop.Properties.Resources.resources
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Desktop.csproj.GenerateResource.cache
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Desktop.csproj.CoreCompileInputs.cache
+C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Desktop.csproj.CopyComplete
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Desktop.exe
 C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Desktop.pdb
-C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\Entities.dll
-C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\Entities.pdb
-C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Desktop.csproj.CopyComplete
-C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\App.baml
-C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Pages\LogInPage.g.cs
-C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Pages\RegistrationPage.g.cs
-C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Pages\LogInPage.baml
-C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Pages\RegistrationPage.baml
-C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Pages\CreateTaskPage.g.cs
-C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Pages\MainEmptyPage.g.cs
-C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Pages\MainPage.g.cs
-C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Pages\CreateTaskPage.baml
-C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Pages\MainEmptyPage.baml
-C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Pages\MainPage.baml
-C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Dictionaries\ButtonDictionary.baml
-C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Dictionaries\TextBlockDictionary.baml
-C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Dictionaries\TextBoxDictionary.baml
-C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\MainWindow.g.cs
-C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\MainWindow.baml
-C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\Newtonsoft.Json.Bson.dll
-C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\Newtonsoft.Json.dll
-C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\System.Buffers.dll
-C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\System.Memory.dll
-C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\System.Net.Http.Formatting.dll
-C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\System.Net.Http.Json.dll
-C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\System.Numerics.Vectors.dll
-C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\System.Text.Encodings.Web.dll
-C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\System.Text.Json.dll
-C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\System.Threading.Tasks.Extensions.dll
-C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\System.ValueTuple.dll
-C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
-C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\Newtonsoft.Json.xml
-C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\Newtonsoft.Json.Bson.pdb
-C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\Newtonsoft.Json.Bson.xml
-C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\System.Buffers.xml
-C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\System.Memory.xml
-C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\System.Net.Http.Formatting.xml
-C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\System.Net.Http.Json.xml
-C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\System.Numerics.Vectors.xml
-C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\System.Text.Encodings.Web.xml
-C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\System.Text.Json.xml
-C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\System.Threading.Tasks.Extensions.xml
-C:\Users\User\RiderProjects\ToDo\Desktop\bin\Debug\System.ValueTuple.xml
-C:\Users\User\RiderProjects\ToDo\Desktop\obj\Debug\Desktop.exe.config

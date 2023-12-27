@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\User\RiderProjects\ToDo\Desktop\App.xaml
-9-1835310746
+7-1272795250
 
-15-939074243
-2538939052
-Dictionaries\ButtonDictionary.xaml;Dictionaries\TextBlockDictionary.xaml;Dictionaries\TextBoxDictionary.xaml;MainWindow.xaml;Pages\CreateTaskPage.xaml;Pages\LogInPage.xaml;Pages\MainEmptyPage.xaml;Pages\MainPage.xaml;Pages\RegistrationPage.xaml;
+17-956395632
+192071182518
+View\CreatePage.xaml;View\LoginPage.xaml;View\MainEmptyPage.xaml;View\MainPage.xaml;View\RegisterPage.xaml;View\MainWindow1.xaml;TodoDictionary.xaml;
 
-True
+False
 

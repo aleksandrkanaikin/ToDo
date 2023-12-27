@@ -1,0 +1,54 @@
+﻿<Window x:Class="Desktop.MainEmptyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:Desktop"
+        mc:Ignorable="d"
+        Title="RegistrationWindow" Height="650" Width="800"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+       
+        <WrapPanel Grid.Row="0">
+            <Image Height="75" Width="75" Margin="10, 10, 0, 0" Source="/Images/Photo_profile.png"/>
+        </WrapPanel>
+       
+        <WrapPanel Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <TextBlock Name="UserNameTxb" FontSize="18"
+                       Margin="10,0,0,0"></TextBlock>
+        </WrapPanel>
+        
+        <WrapPanel Width="428" Grid.Row="1" HorizontalAlignment="Center" Orientation="Vertical">
+            <TextBlock Text="Добро пожаловать!" FontSize="32"/>
+            <TextBlock Text="" FontSize="32"></TextBlock>
+            <TextBlock Text="Создайте свою первую задачу!" TextWrapping="Wrap" FontSize="32"></TextBlock>
+        </WrapPanel>
+       
+        <WrapPanel Grid.Row="2" HorizontalAlignment="Center">
+            <Button
+                Name="NewTaskButton"
+                Height="Auto"
+                Width="Auto"
+                Margin="5"
+                Padding="10"
+                Background="#F96060"
+                BorderBrush="#F96060"
+                Content="Создать первую задачу"
+                FontSize="24"
+                Foreground="White"
+                Click="NewTaskButton_OnClick">
+               
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="5, 5, 5, 5"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </WrapPanel>
+    </Grid>
+</Window>

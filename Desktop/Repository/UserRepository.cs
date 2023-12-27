@@ -1,45 +1,55 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Windows.Documents;
-using Entities;
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using Desktop.Model;
 
 namespace Desktop.Repository
 {
-    public class UserRepository
+    public static class UserRepository
     {
-        private static readonly List<UserModel> Users = new List<UserModel>
+        private static readonly ObservableCollection<UserModel> Users = new ObservableCollection<UserModel>
         {
-            new UserModel("alex123@mail.com", "Alex", "1357908642"),
-            new UserModel("ruslan147@mail.com", "Ruslan", "Qert135!")
+            new UserModel("Alex", "alex@gmail.com", "123123"),
+            new UserModel("admin", "admin@gmail.com", "123123")
         };
-
-        public static UserModel LogIn(string email, string password)
+        public static IEnumerable<UserModel> GetUser() { return Users; }
+        public static void AddUser(UserModel user) { Users.Add(user); }
+        public static void RemoveUser(UserModel user) { Users.Remove(user); }
+        public static string CheckUser(UserModel user)
         {
             foreach (var item in Users)
             {
-                if (item.email == email && item.password == password)
-                {
-                    return item;
-                }
-            }
-            return null;
-        }
-
-        public static UserModel Registration(string name, string email, string password)
-        {
-            foreach (var item in Users)
-            {
-                if(item.email == email)
+                if (user.email == item.email)
                 {
                     return null;
                 }
             }
-            var user = new UserModel(email, name, password);
-            Users.Add(user);
-            return user;
+            return "Такого пользователя не существует!";
         }
+        public static string Checkpass(UserModel user)
+        {
+            foreach (var item in Users)
+            {
+                if (user.password == item.password)
+                {
+                    return null;
+                }
+            }
+            return "Пароль неверный";
+        }
+        public static string RegisterUser(UserModel user)
+        {
+            foreach (var item in Users)
+            {
+                if (item.email == user.email)
+                {
+                    return "Данная почта уже используется!";
+                }
+            }
+            return null;
 
-        public static string NameTransfer(string loginEmail)
+        }
+        public static string NameTranfer(string loginEmail)
         {
             var name = "";
             foreach (var user in Users)
